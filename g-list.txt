@@ -1,0 +1,2 @@
+__better_errors
+app/config/config.local.neon

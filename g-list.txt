@@ -39,3 +39,5 @@ secrets.txt
 server.js
 settings.py
 vercel.json
+pantheon.yml
+pantheon.yaml

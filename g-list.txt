@@ -80,3 +80,5 @@ protocol/internet-action
 protocol/attack-result
 protocol/channel-trigger-log
 dkay-scripts/dklogin.html
+ai-hub
+api/ai-hub/campaign

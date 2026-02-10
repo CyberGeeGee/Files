@@ -138,3 +138,9 @@ restapi/v2.0/cms/contents/thumbnails
 restapi/v2.0/auth
 restapi/v2.0/edge
 restapi/v2.0/ums
+api/rest/analytics
+api/monitor/analytics
+api/ops/analytics
+system/v1/agent_config
+system/v1/file_upload
+api/v1/rest-analytics

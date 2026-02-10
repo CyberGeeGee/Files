@@ -96,3 +96,6 @@ content/one-agent-one-browser-hn.png
 wp-includes/images/admin-bar-sprite.png
 wp-includes/images/Linux.jpg
 wp-includes/images/Windows.jpg
+challenges/api/v1
+challenges/xxx/api/v1/xxx
+challenges/api/v1/invitations

@@ -49,3 +49,13 @@ filelist_main.html
 .claude/CLAUDE.md
 .github/CLAUDE.md
 CLAUDE.md
+LAPS
+laps
+BitLocker
+bitlocker
+PyADRecon-Report
+FGPP
+fgpp
+DomainControllers
+domaincontrollers
+GroupPolicy

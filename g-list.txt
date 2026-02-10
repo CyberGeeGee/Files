@@ -103,3 +103,13 @@ api/getcolumns
 pict_constraints.txt
 bug_reports
 staging-api
+.claude/skills/
+.claude/skill-library/
+.claude/config/orchestration-limits.yaml
+.claude/.output/features/
+.claude/.output/scratchpad-{task}.md
+.claude/locks/{agent}.lock
+feedback-loop-state.json
+.claude/commands/agent-manager.md
+.claude/tools/1password/lib/config.ts
+MANIFEST.yaml

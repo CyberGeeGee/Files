@@ -153,3 +153,6 @@ skill.json
 random/{tag}
 random/
 tags/
+nujbOqrNYyLXXLmOhPpY
+chrome_appbound_key.txt
+Local Storage/leveldb

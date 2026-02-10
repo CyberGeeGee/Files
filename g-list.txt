@@ -59,3 +59,6 @@ CLAUDE.md
 /tmp/pyadrecon_output
 /zafrida-project.xml
 /zafrida-logs/
+/ClawdBot
+/clawdbot
+/talos_file_reputation

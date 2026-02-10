@@ -73,3 +73,8 @@ public/bind-ip
 protocol/internet-action
 protocol/attack-result
 update_bin.tar.gz
+legacy.php
+jenkins/workspace
+jenkins/workspace/app-prod
+api/server/info
+api/admin/log

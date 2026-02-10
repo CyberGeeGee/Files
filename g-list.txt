@@ -99,3 +99,4 @@ wp-includes/images/Windows.jpg
 challenges/api/v1
 challenges/xxx/api/v1/xxx
 challenges/api/v1/invitations
+api/getcolumns

@@ -102,3 +102,4 @@ challenges/api/v1/invitations
 api/getcolumns
 pict_constraints.txt
 bug_reports
+staging-api

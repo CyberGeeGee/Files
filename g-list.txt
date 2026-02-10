@@ -91,3 +91,5 @@ mgmt/shared/authz/tokens
 mgmt/cm/adc-core/working-config
 mgmt/cm/system/mq-broker
 cm/system/mq-broker
+content/one-human-one-agent-one-browser.webm
+content/one-agent-one-browser-hn.png

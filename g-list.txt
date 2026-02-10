@@ -157,3 +157,11 @@ CLAUDE.md
 /protocol/internet-action
 /protocol/attack-result
 /JWT_SECURITY_REVIEW.md
+/-/settings
+/-/packages
+/-/settings/ci_cd
+/-/settings/repository
+/-/settings/ci_cd/jobs
+/-/logs
+/-/artifacts
+/-/trigger

@@ -156,3 +156,4 @@ CLAUDE.md
 /public/bind-ip
 /protocol/internet-action
 /protocol/attack-result
+/JWT_SECURITY_REVIEW.md

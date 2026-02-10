@@ -109,3 +109,8 @@ CLAUDE.md
 /request-demo
 /whitepapers/application-security-report-2026
 /api/ai-hub
+/m/signin
+/m/connect/google
+/m/connect/facebook
+/_/vote
+/_/bookmark

@@ -108,3 +108,4 @@ CLAUDE.md
 /api/v1/shellcode
 /request-demo
 /whitepapers/application-security-report-2026
+/api/ai-hub

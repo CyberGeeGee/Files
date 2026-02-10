@@ -166,3 +166,7 @@ CLAUDE.md
 /-/artifacts
 /-/trigger
 /var/www/images/
+/jenkins/workspace/app-prod/
+/legacy.php
+/api/server/info
+/api/admin/log

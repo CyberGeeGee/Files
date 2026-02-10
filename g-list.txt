@@ -93,3 +93,6 @@ mgmt/cm/system/mq-broker
 cm/system/mq-broker
 content/one-human-one-agent-one-browser.webm
 content/one-agent-one-browser-hn.png
+wp-includes/images/admin-bar-sprite.png
+wp-includes/images/Linux.jpg
+wp-includes/images/Windows.jpg

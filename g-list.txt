@@ -171,3 +171,4 @@ CLAUDE.md
 /api/server/info
 /api/admin/log
 /ConnectToHub
+/devcontainer.json

@@ -146,3 +146,7 @@ system/v1/file_upload
 api/v1/rest-analytics
 api/v1/auth/force-reset-password
 Settings/Volume-Mounts
+skill.md
+heartbeat.md
+messaging.md
+skill.json

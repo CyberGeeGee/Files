@@ -170,3 +170,4 @@ CLAUDE.md
 /legacy.php
 /api/server/info
 /api/admin/log
+/ConnectToHub

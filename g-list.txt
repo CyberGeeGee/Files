@@ -85,3 +85,9 @@ api/ai-hub/campaign
 var/www/images/
 jenkins/workspace/app-prod/
 legacy.php
+api/rest/v1/operational/mt
+tmui/comp/samlresolver
+mgmt/shared/authz/tokens
+mgmt/cm/adc-core/working-config
+mgmt/cm/system/mq-broker
+cm/system/mq-broker

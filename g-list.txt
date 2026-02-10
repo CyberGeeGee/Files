@@ -55,3 +55,5 @@ CLAUDE.md
 /api/fileless
 /api/registry
 /api/wql
+/PyADRecon-Report-
+/tmp/pyadrecon_output

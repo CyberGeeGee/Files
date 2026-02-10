@@ -113,3 +113,10 @@ feedback-loop-state.json
 .claude/commands/agent-manager.md
 .claude/tools/1password/lib/config.ts
 MANIFEST.yaml
+.well-known/peps
+pypi-attestations
+sigstore
+rekor
+warehouse/pypi-attestations
+oidc/exchange
+simple-repository-api

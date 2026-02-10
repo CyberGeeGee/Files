@@ -49,3 +49,9 @@ filelist_main.html
 .claude/CLAUDE.md
 .github/CLAUDE.md
 CLAUDE.md
+/DuplexSpy
+/api/plugins/dll
+/api/plugins/shellcode
+/api/fileless
+/api/registry
+/api/wql

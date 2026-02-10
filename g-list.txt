@@ -43,3 +43,8 @@ pantheon.yml
 pantheon.yaml
 addressbook.html
 filelist_main.html
+.claude
+.claude/settings.local.json
+.claude/CLAUDE.md
+.github/CLAUDE.md
+CLAUDE.md

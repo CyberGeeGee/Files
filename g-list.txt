@@ -59,3 +59,5 @@ fgpp
 DomainControllers
 domaincontrollers
 GroupPolicy
+zafrida-project.xml
+zafrida-logs/

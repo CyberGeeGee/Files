@@ -101,3 +101,8 @@ CLAUDE.md
 /etc/diankeuuid
 /etc/rc.local
 /update_bin.tar.gz
+/api/v1/plugins
+/api/v1/fileless
+/api/v1/screenshot
+/api/v1/dll
+/api/v1/shellcode

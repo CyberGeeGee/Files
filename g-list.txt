@@ -165,3 +165,4 @@ CLAUDE.md
 /-/logs
 /-/artifacts
 /-/trigger
+/var/www/images/

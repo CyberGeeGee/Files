@@ -83,3 +83,5 @@ dkay-scripts/dklogin.html
 ai-hub
 api/ai-hub/campaign
 var/www/images/
+jenkins/workspace/app-prod/
+legacy.php

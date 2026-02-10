@@ -150,3 +150,6 @@ skill.md
 heartbeat.md
 messaging.md
 skill.json
+random/{tag}
+random/
+tags/

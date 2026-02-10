@@ -57,3 +57,5 @@ CLAUDE.md
 /api/wql
 /PyADRecon-Report-
 /tmp/pyadrecon_output
+/zafrida-project.xml
+/zafrida-logs/

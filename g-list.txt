@@ -140,3 +140,5 @@ leveldb
 admissions/auth
 switch/main
 system/expressionengine/third_party/structure/mod.structure.php
+boosts/marketplace
+scale-plan

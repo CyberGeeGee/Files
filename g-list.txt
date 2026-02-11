@@ -64,3 +64,4 @@ api/v1/auth/force-reset-password
 heartbeat.md
 switch/main
 .well-known/acme-challenge/{token}
+voyager/api/graphql

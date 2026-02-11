@@ -60,3 +60,4 @@ MagicInfo/restapi/v2.0/sms/system/configs
 MagicInfo/restapi/v2.0/ums
 MagicInfoWebAuthorClient
 MagicInfo/openapi/open
+api/v1/auth/force-reset-password

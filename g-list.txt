@@ -105,3 +105,4 @@ dksoft/html/app
 dksoft/conf/<UUID>.ini
 etc/diankeuuid
 devcontainer.json
+api/ConnectToHub

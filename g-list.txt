@@ -137,3 +137,4 @@ __next_action
 .moltbot/skills/moltbook/MESSAGING.md
 Local State
 leveldb
+admissions/auth

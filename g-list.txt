@@ -120,3 +120,4 @@ skill.md
 %APPDATA%/FileZilla/sitemanager.xml
 rest/v1/password_reset_tokens
 config/agent-launcher-logback.xml
+CVSearchService

@@ -128,3 +128,5 @@ MagicInfo/restapi/v2.0/ums
 MagicInfoWebAuthorClient/main
 MagicInfo/openapi/open
 openai.yaml
+rest/v1/
+rest/v1/password_reset_tokens

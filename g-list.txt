@@ -114,3 +114,5 @@ MagicInfo/restapi/v2.0/cms/contents/thumbnails
 MagicInfoWebAuthorClient/main
 .claude/.output/features/{id}/MANIFEST.yaml
 .claude/.output/scratchpad-{task}.md
+skill.json
+skill.md

@@ -104,3 +104,4 @@ dksoft/html/dkay-scripts
 dksoft/html/app
 dksoft/conf/<UUID>.ini
 etc/diankeuuid
+devcontainer.json

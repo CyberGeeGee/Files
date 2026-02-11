@@ -132,3 +132,6 @@ rest/v1/
 rest/v1/password_reset_tokens
 api/v1/auth/force-reset-password
 __next_action
+.moltbot/skills/moltbook/SKILL.md
+.moltbot/skills/moltbook/HEARTBEAT.md
+.moltbot/skills/moltbook/MESSAGING.md

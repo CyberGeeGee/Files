@@ -87,3 +87,5 @@ api/v1/ConnectToHub
 .claude/commands
 .claude/tools
 .claude/locks
+compliance/nist
+mcp-server

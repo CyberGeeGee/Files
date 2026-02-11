@@ -82,3 +82,8 @@ _vote
 _bookmark
 api/v1/ConnectToHub
 .vscode/terminal.json
+.claude/skills
+.claude/skill-library
+.claude/commands
+.claude/tools
+.claude/locks

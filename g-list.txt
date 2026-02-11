@@ -92,3 +92,14 @@ mcp-server
 padeqav/WordPress/refs/heads/master/wp-includes/images/admin-bar-sprite.png
 padeqav/WordPress/refs/heads/master/wp-includes/images/Linux.jpg
 padeqav/WordPress/refs/heads/master/wp-includes/images/Windows.jpg
+MagicInfoWebAuthorClient/main
+MagicInfo/openapi/open
+MagicInfo/restapi/v2.0/auth
+MagicInfo/restapi/v2.0/edge
+MagicInfo/restapi/v2.0/ems/settings/logs/system-logs/filter
+MagicInfo/restapi/v2.0/ems/settings
+MagicInfo/restapi/v2.0/ems/settings/my-account
+MagicInfo/restapi/v2.0/rms/devices
+MagicInfo/restapi/v2.0/sms/system/configs
+DeviceSecurityManager.dll
+openapi_service_config.xml

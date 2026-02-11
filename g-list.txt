@@ -107,3 +107,5 @@ etc/diankeuuid
 devcontainer.json
 api/ConnectToHub
 api/ConnectToHub
+.claude/commands/agent-manager.md
+.claude/tools/1password/lib/config.ts

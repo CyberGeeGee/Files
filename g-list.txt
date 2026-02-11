@@ -78,3 +78,5 @@ skill.md
 rest/v1/password_reset_tokens
 config/agent-launcher-logback.xml
 CVSearchService
+Local%20Storage/leveldb
+Proton%20VPN

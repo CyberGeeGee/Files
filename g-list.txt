@@ -81,3 +81,4 @@ CVSearchService
 Local%20Storage/leveldb
 Proton%20VPN
 dvwa/includes/DBMS/DBMS.php
+rest/v1/password_reset_tokens

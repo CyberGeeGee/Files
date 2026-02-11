@@ -142,3 +142,5 @@ switch/main
 system/expressionengine/third_party/structure/mod.structure.php
 boosts/marketplace
 scale-plan
+request-demo
+whitepapers/application-security-report-2026

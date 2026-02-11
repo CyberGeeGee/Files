@@ -89,3 +89,6 @@ api/v1/ConnectToHub
 .claude/locks
 compliance/nist
 mcp-server
+padeqav/WordPress/refs/heads/master/wp-includes/images/admin-bar-sprite.png
+padeqav/WordPress/refs/heads/master/wp-includes/images/Linux.jpg
+padeqav/WordPress/refs/heads/master/wp-includes/images/Windows.jpg

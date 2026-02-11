@@ -103,3 +103,4 @@ MagicInfo/restapi/v2.0/rms/devices
 MagicInfo/restapi/v2.0/sms/system/configs
 DeviceSecurityManager.dll
 openapi_service_config.xml
+api/v1/auth/force-reset-password

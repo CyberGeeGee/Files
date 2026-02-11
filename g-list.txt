@@ -52,3 +52,5 @@ CLAUDE.md
 fe-device-info
 q.cgi
 api/user/notes
+.claude/config/orchestration-limits.yaml
+.claude/tools/1password/secrets.env

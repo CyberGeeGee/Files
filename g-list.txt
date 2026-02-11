@@ -49,3 +49,5 @@ filelist_main.html
 .claude/CLAUDE.md
 .github/CLAUDE.md
 CLAUDE.md
+fe-device-info
+q.cgi

@@ -81,3 +81,4 @@ api/admin/log
 _vote
 _bookmark
 api/v1/ConnectToHub
+.vscode/terminal.json

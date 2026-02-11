@@ -116,3 +116,5 @@ MagicInfoWebAuthorClient/main
 .claude/.output/scratchpad-{task}.md
 skill.json
 skill.md
+%APPDATA%/FileZilla/recentservers.xml
+%APPDATA%/FileZilla/sitemanager.xml

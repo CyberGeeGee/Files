@@ -78,3 +78,5 @@ jenkins/workspace
 jenkins/workspace/app-prod
 api/server/info
 api/admin/log
+_vote
+_bookmark

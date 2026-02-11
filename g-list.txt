@@ -109,3 +109,6 @@ api/ConnectToHub
 api/ConnectToHub
 .claude/commands/agent-manager.md
 .claude/tools/1password/lib/config.ts
+MagicInfo/restapi/v2.0/rms/devices/filter
+MagicInfo/restapi/v2.0/cms/contents/thumbnails
+MagicInfoWebAuthorClient/main

@@ -127,3 +127,4 @@ MagicInfo/restapi/v2.0/cms/contents/thumbnails
 MagicInfo/restapi/v2.0/ums
 MagicInfoWebAuthorClient/main
 MagicInfo/openapi/open
+openai.yaml

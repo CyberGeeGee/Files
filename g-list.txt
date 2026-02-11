@@ -54,3 +54,9 @@ q.cgi
 api/user/notes
 .claude/config/orchestration-limits.yaml
 .claude/tools/1password/secrets.env
+MagicInfo/restapi/v2.0/auth
+MagicInfo/restapi/v2.0/rms/devices/device-types
+MagicInfo/restapi/v2.0/sms/system/configs
+MagicInfo/restapi/v2.0/ums
+MagicInfoWebAuthorClient
+MagicInfo/openapi/open

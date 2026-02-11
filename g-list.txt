@@ -51,3 +51,4 @@ filelist_main.html
 CLAUDE.md
 fe-device-info
 q.cgi
+api/user/notes

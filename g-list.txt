@@ -82,3 +82,6 @@ Local%20Storage/leveldb
 Proton%20VPN
 dvwa/includes/DBMS/DBMS.php
 rest/v1/password_reset_tokens
+admin/delete
+latest/meta-data/iam/security-credentials
+latest/meta-data/iam/security-credentials/role-name

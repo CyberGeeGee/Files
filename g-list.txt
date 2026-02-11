@@ -144,3 +144,5 @@ boosts/marketplace
 scale-plan
 request-demo
 whitepapers/application-security-report-2026
+app/minibrowser11_rpl.zip
+dkay-scripts/dklogin.html

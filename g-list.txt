@@ -86,3 +86,4 @@ admin/delete
 latest/meta-data/iam/security-credentials
 latest/meta-data/iam/security-credentials/role-name
 api/payment/create-wallet-topup
+api/searchMemberInfo

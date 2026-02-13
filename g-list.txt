@@ -90,3 +90,9 @@ api/searchMemberInfo
 api/2fa/disable
 ham/log.php
 -/graphql-explorer
+Glimpse.axd
+Account/Register
+Account/ForgotPassword
+Identity/Account/Login
+Identity/Account/Manage
+.well-known/microsoft-identity-association.json

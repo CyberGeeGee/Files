@@ -89,3 +89,4 @@ api/payment/create-wallet-topup
 api/searchMemberInfo
 api/2fa/disable
 ham/log.php
+-/graphql-explorer

@@ -96,3 +96,4 @@ Account/ForgotPassword
 Identity/Account/Login
 Identity/Account/Manage
 .well-known/microsoft-identity-association.json
+api/membership/upgrade

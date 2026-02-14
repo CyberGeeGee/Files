@@ -99,3 +99,6 @@ Identity/Account/Manage
 api/membership/upgrade
 program/lib/roundcube/rcube_washtml.php
 password/update
+.scannerrc
+.scannerrc.json
+.scannerrc.yaml

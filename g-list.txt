@@ -97,3 +97,4 @@ Identity/Account/Login
 Identity/Account/Manage
 .well-known/microsoft-identity-association.json
 api/membership/upgrade
+program/lib/roundcube/rcube_washtml.php

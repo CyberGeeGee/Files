@@ -104,3 +104,9 @@ password/update
 .scannerrc.yaml
 etc/sudoers
 etc/ld.so.preload
+api/logs/api.log
+api/.tmp/api-lib.20201015.local.tar.gz
+src/lib/Server/config.yml
+src/lib/Server/config.yml.dist
+src/lib/Server/odbc.ini
+HR311C/api/v3/view

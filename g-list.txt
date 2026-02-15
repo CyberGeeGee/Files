@@ -112,3 +112,4 @@ src/lib/Server/odbc.ini
 HR311C/api/v3/view
 module/ps_checkout/ExpressCheckout
 app/authorize
+.uinfo.txt

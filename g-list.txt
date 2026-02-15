@@ -102,3 +102,5 @@ password/update
 .scannerrc
 .scannerrc.json
 .scannerrc.yaml
+etc/sudoers
+etc/ld.so.preload

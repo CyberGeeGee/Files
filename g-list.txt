@@ -143,3 +143,7 @@ backup-2025.old
 2025_backup.old
 2025backup.old
 2025-backup.old
+plugins/system/nrframework/fields/nrchainedfields.php
+plugins/system/nrframework/fields/nrinlinefileupload.php
+plugins/system/nrframework/fields/ajaxify.php
+plugins/system/nrframework/fields/componentitems.php

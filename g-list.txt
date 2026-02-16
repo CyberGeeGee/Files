@@ -150,3 +150,4 @@ plugins/system/nrframework/fields/componentitems.php
 .config/sandboxec
 api/v1/flags
 services/WsPortalV6UpDwAxis2Impl
+api/v2/settings/info

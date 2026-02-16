@@ -147,3 +147,4 @@ plugins/system/nrframework/fields/nrchainedfields.php
 plugins/system/nrframework/fields/nrinlinefileupload.php
 plugins/system/nrframework/fields/ajaxify.php
 plugins/system/nrframework/fields/componentitems.php
+.config/sandboxec

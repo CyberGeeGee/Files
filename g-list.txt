@@ -151,3 +151,4 @@ plugins/system/nrframework/fields/componentitems.php
 api/v1/flags
 services/WsPortalV6UpDwAxis2Impl
 api/v2/settings/info
+account/dashboard/accounts

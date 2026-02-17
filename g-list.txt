@@ -159,3 +159,6 @@ api/invoices/update
 api/companies/invoices
 api/v2/users/orders
 api/users/update
+payment-method/submit
+start-meeting
+api/deposit/adresses

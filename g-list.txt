@@ -153,3 +153,9 @@ services/WsPortalV6UpDwAxis2Impl
 api/v2/settings/info
 account/dashboard/accounts
 res/xml/network_security_config.xml
+api/invoices/payment-status
+api/invoices/mark-paid
+api/invoices/update
+api/companies/invoices
+api/v2/users/orders
+api/users/update

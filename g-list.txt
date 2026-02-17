@@ -165,3 +165,5 @@ api/deposit/adresses
 deleteCompanyModules
 addCompanyPermissions
 deleteUser
+entry/login
+modules/onion_servers/take_server.php

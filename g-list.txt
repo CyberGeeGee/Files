@@ -162,3 +162,6 @@ api/users/update
 payment-method/submit
 start-meeting
 api/deposit/adresses
+deleteCompanyModules
+addCompanyPermissions
+deleteUser

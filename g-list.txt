@@ -185,3 +185,7 @@ api/dev/cdp
 api/dev/console
 api/dev/debug
 api/dev/screenshot
+api/tags
+v1/models
+api/v0/models
+v1/health/ready

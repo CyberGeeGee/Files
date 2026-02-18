@@ -168,3 +168,5 @@ deleteUser
 entry/login
 modules/onion_servers/take_server.php
 vendor/tests/GetPhpInfo.php
+etc/apache2/sites-enabled/000-default.conf
+etc/apache2/.htpasswd

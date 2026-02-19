@@ -102,8 +102,6 @@ password/update
 .scannerrc
 .scannerrc.json
 .scannerrc.yaml
-etc/sudoers
-etc/ld.so.preload
 api/logs/api.log
 api/.tmp/api-lib.20201015.local.tar.gz
 src/lib/Server/config.yml
@@ -152,7 +150,6 @@ api/v1/flags
 services/WsPortalV6UpDwAxis2Impl
 api/v2/settings/info
 account/dashboard/accounts
-res/xml/network_security_config.xml
 api/invoices/payment-status
 api/invoices/mark-paid
 api/invoices/update
@@ -162,14 +159,10 @@ api/users/update
 payment-method/submit
 start-meeting
 api/deposit/adresses
-deleteCompanyModules
 addCompanyPermissions
-deleteUser
 entry/login
 modules/onion_servers/take_server.php
 vendor/tests/GetPhpInfo.php
-etc/apache2/sites-enabled/000-default.conf
-etc/apache2/.htpasswd
 api/plugins/enable
 api/plugins/disable
 api/plugins/install
@@ -203,7 +196,6 @@ api/billing/plan
 api/redeem
 api/coupon/apply
 api/dashboard/stats
-api/delete-account
 admin/users/export
 api/v2/users/invite
 api/v2/workspace/members

@@ -164,14 +164,10 @@ entry/login
 modules/onion_servers/take_server.php
 vendor/tests/GetPhpInfo.php
 api/plugins/enable
-api/plugins/disable
 api/plugins/install
-api/plugins/uninstall
 api/plugins/reload
 api/themes/install
-api/themes/uninstall
 api/snippets/enable
-api/snippets/disable
 api/eval
 api/devtools
 api/dev/cdp
@@ -205,3 +201,4 @@ api/v2/billing/update-plan
 api/v2/admin/reports
 _/api/self/update-picture
 _/api/users
+

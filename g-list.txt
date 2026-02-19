@@ -191,3 +191,5 @@ api/v0/models
 v1/health/ready
 api/v2/storefront/checkout
 api/v2/storefront/cart
+docs/openapi.json
+prompts/export

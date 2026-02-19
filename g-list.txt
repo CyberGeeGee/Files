@@ -194,3 +194,4 @@ api/v2/storefront/cart
 docs/openapi.json
 prompts/export
 cgi-bin/api.values.get
+__data.json

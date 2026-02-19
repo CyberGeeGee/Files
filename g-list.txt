@@ -195,3 +195,12 @@ docs/openapi.json
 prompts/export
 cgi-bin/api.values.get
 __data.json
+api/user/update
+api/teams
+api/organizations
+api/subscription
+api/billing/plan
+api/redeem
+api/coupon/apply
+api/dashboard/stats
+api/delete-account

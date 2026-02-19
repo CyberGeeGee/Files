@@ -204,3 +204,10 @@ api/redeem
 api/coupon/apply
 api/dashboard/stats
 api/delete-account
+admin/users/export
+api/v2/users/invite
+api/v2/workspace/members
+api/v2/documents/upload
+api/v2/documents/download
+api/v2/billing/update-plan
+api/v2/admin/reports

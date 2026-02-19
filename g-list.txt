@@ -211,3 +211,5 @@ api/v2/documents/upload
 api/v2/documents/download
 api/v2/billing/update-plan
 api/v2/admin/reports
+_/api/self/update-picture
+_/api/users

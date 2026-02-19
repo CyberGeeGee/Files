@@ -202,3 +202,4 @@ api/v2/admin/reports
 _/api/self/update-picture
 _/api/users
 
+api/deploy

@@ -213,3 +213,4 @@ metrics/resource
 portforward
 healthz/syncloop
 api/voyager
+sdk/<pixel_id>/iwl.js

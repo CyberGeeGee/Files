@@ -203,3 +203,5 @@ _/api/self/update-picture
 _/api/users
 
 api/deploy
+intake/organizations/events
+discover/pcversion/metrics

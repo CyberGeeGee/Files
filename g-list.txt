@@ -205,3 +205,4 @@ _/api/users
 api/deploy
 intake/organizations/events
 discover/pcversion/metrics
+Login-OAuthReentry

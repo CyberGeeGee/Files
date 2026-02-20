@@ -212,3 +212,4 @@ api/v1/nodes/$NODE_NAME/proxy/containerLogs
 metrics/resource
 portforward
 healthz/syncloop
+api/voyager

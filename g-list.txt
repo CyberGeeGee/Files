@@ -206,3 +206,9 @@ api/deploy
 intake/organizations/events
 discover/pcversion/metrics
 Login-OAuthReentry
+api/v1/nodes/$NODE_NAME/proxy/metrics
+api/v1/nodes/$NODE_NAME/proxy/stats/summary
+api/v1/nodes/$NODE_NAME/proxy/containerLogs
+metrics/resource
+portforward
+healthz/syncloop

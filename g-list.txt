@@ -214,3 +214,5 @@ portforward
 healthz/syncloop
 api/voyager
 sdk/<pixel_id>/iwl.js
+api/chat/twirp/chat.v1.ChannelService/GetChannel
+api/chat/twirp/chat.v1.ChannelService/EvaluateChannelGroupsUpdatePolicy

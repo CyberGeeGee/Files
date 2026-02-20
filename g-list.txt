@@ -216,3 +216,5 @@ api/voyager
 sdk/<pixel_id>/iwl.js
 api/chat/twirp/chat.v1.ChannelService/GetChannel
 api/chat/twirp/chat.v1.ChannelService/EvaluateChannelGroupsUpdatePolicy
+v2/aggcommon/v3-location-point;v3alertsHeadlines;v3-wx-observations-current
+v3/wx/observations/current

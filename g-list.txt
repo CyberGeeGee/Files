@@ -220,3 +220,4 @@ v2/aggcommon/v3-location-point;v3alertsHeadlines;v3-wx-observations-current
 v3/wx/observations/current
 api/team/invite
 api/team/revoke
+playground/invoke

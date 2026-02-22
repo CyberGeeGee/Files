@@ -225,3 +225,4 @@ athena/druid
 SKILL.md
 references/recon.md
 references/waf-bypass.md
+api/v1/user/collaborator

@@ -222,3 +222,6 @@ api/team/invite
 api/team/revoke
 playground/invoke
 athena/druid
+SKILL.md
+references/recon.md
+references/waf-bypass.md

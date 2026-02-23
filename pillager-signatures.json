@@ -1,0 +1,3160 @@
+{
+  "version": "2.0",
+  "name": "Pillager Signatures",
+  "signatures": [
+    {
+      "name": "Adafruit IO Key",
+      "patterns": [
+        {
+          "regex": "(?i)adafruit[-_.\\s]{0,3}io[-_.\\s]{0,3}key['\\\"\\s:=]+[a-fA-F0-9]{32}",
+          "keyword": "adafruit"
+        }
+      ],
+      "requires_context": true,
+      "note": "Requires context due to 32-char hex being too broad for standalone detection"
+    },
+    {
+      "name": "Adobe API Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)adobe-aep-[a-zA-Z0-9]{32}",
+          "keyword": "adobe"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Adobe Client Secret",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)p8e-[a-zA-Z0-9]{32}",
+          "keyword": "p8e-"
+        }
+      ],
+      "requires_context": false,
+      "note": "UNVERIFIED: No documented prefix - standard OAuth client secrets"
+    },
+    {
+      "name": "Adobe Client ID",
+      "patterns": [
+        {
+          "regex": "(?i)adobe[-_.\\s]{0,3}client[_-]?id['\\\"\\s:=]+([a-zA-Z0-9]{32})",
+          "keyword": "adobe"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Adobe Client Secret Context",
+      "patterns": [
+        {
+          "regex": "(?i)adobe[-_.\\s]{0,3}client[_-]?secret['\\\"\\s:=]+([a-zA-Z0-9/_+-]{40})",
+          "keyword": "adobe"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Age Secret Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)AGE-SECRET-KEY-1[QPZRY9X8GF2TVDW0S3JN54KHCE6MUA7L]{58}",
+          "keyword": "AGE-"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Airtable API Key",
+      "patterns": [
+        {
+          "regex": "(?i)airtable[-_.\\s]{0,3}['\"\\s:]+key[A-Za-z0-9]{17}",
+          "keyword": "airtable"
+        },
+        {
+          "regex": "(?i)key[A-Za-z0-9]{17}['\"\\s]*airtable",
+          "keyword": "key"
+        }
+      ],
+      "requires_context": true,
+      "note": "Made context-aware due to false positives matching common 'key' + 17 chars patterns like 'keysNotRemovedFromDb'"
+    },
+    {
+      "name": "Algolia API Key",
+      "patterns": [
+        {
+          "regex": "(?i)algolia[-_.\\s]{0,3}api['\\\"\\s:]+[a-zA-Z0-9]{30}",
+          "keyword": "algolia"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Algolia App ID",
+      "patterns": [
+        {
+          "regex": "(?i)(?:algolia[-_.\\s]{0,3}app[_-]?id)['\\\"\\s:]+([A-Z0-9]{10})",
+          "keyword": "algolia"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Alibaba Access Key",
+      "patterns": [
+        {
+          "regex": "(?i)(?:alibaba)[-_.\\s]{0,3}access[_-]?key[_-]?id['\\\"\\s:=]+[a-zA-Z0-9]{24,30}"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Alibaba Secret Key",
+      "patterns": [
+        {
+          "regex": "(?i)(?:alibaba)[-_.\\s]{0,3}access[_-]?key[_-]?secret['\\\"\\s:=]+[a-zA-Z0-9]{30,50}"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Alibaba Access Key ID",
+      "patterns": [
+        {
+          "regex": "(?i)(?:alibaba|aliyun|ali)[-_.\\s]{0,3}(?:access[-_.\\s]{0,3})?(?:key[-_.\\s]{0,3})?id['\\\"\\s:=]+LTAI[a-zA-Z0-9]{12,20}"
+        }
+      ],
+      "requires_context": true,
+      "note": "LTAI + 12-20 chars (16-24 total)"
+    },
+    {
+      "name": "Amplitude Secret Key",
+      "patterns": [
+        {
+          "regex": "(?i)amplitude[_-]?secret['\\\"\\s:=]+[a-zA-Z0-9]{32}",
+          "keyword": "amplitude"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Apify API Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)apify_api_[a-zA-Z0-9]{36}",
+          "keyword": "apify_api_"
+        }
+      ],
+      "requires_context": false,
+      "note": "UNVERIFIED: No prefix documented in official Apify docs"
+    },
+    {
+      "name": "ArcGIS API Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)AAPK[a-zA-Z0-9\\-_]{96}",
+          "keyword": "aapk"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Artifactory API Token",
+      "patterns": [
+        {
+          "regex": "(?i)(?:artifactory|jfrog)[-_.\\s]{0,3}(?:api[-_.\\s]{0,3})?(?:token|key)['\\\"\\s:=]+AKC[a-zA-Z0-9]{70}"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Asana Personal Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)\\d/\\d{16}:[a-fA-F0-9]{30}"
+        },
+        {
+          "regex": "(?<!\\w)\\d/\\d{16}:[a-f0-9]{32}"
+        },
+        {
+          "regex": "(?<!\\w)\\d/\\d{16}:[a-zA-Z0-9_\\-]{10,80}"
+        }
+      ],
+      "requires_context": false,
+      "note": "Officially opaque and subject to change - broad pattern for context-based detection"
+    },
+    {
+      "name": "Asana Client ID",
+      "patterns": [
+        {
+          "regex": "(?i)(?:asana)[-_.\\s]{0,3}client[_-]?id['\\\"\\s:=]+[a-zA-Z0-9]{16}"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Asana Client Secret",
+      "patterns": [
+        {
+          "regex": "(?i)(?:asana)[-_.\\s]{0,3}client[_-]?secret['\\\"\\s:=]+[a-zA-Z0-9]{32}"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Asana Personal Token Context",
+      "patterns": [
+        {
+          "regex": "(?i)(?:asana)[-_.\\s]{0,3}personal[_-]?token['\\\"\\s:=]+[a-zA-Z0-9/_-]{16,64}"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Atlassian API Token",
+      "patterns": [
+        {
+          "regex": "(?i)(?:atlassian|jira|confluence)[-_.\\s]{0,3}api[_-]?token['\\\"\\s:=]+[a-zA-Z0-9]{24,64}",
+          "keyword": "jira"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Auth0 Client Secret",
+      "patterns": [
+        {
+          "regex": "(?i)auth0[-_.\\s]{0,3}client[_-]?secret['\\\"\\s:=]+[a-zA-Z0-9/_-]{32,64}",
+          "keyword": "auth0"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "AWS Access Key",
+      "patterns": [
+        {
+          "regex": "(?i)aws['\\\"s]?\\s*(?::access[_-]?key[_-]?id)?\\s*['\\\"\\s:=]+[A-Z0-9]{20}",
+          "keyword": "aws"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "AWS MWS Key",
+      "patterns": [
+        {
+          "regex": "(?i)aws[-_.\\s]{0,3}mws[-_.\\s]{0,3}auth[_-]?token['\\\"\\s:=]+[a-zA-Z0-9/-]{16,64}",
+          "keyword": "aws"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "AWS Secret Key",
+      "patterns": [
+        {
+          "regex": "(?i)aws['\\\"s]?\\s*(?::secret[_-]?access[_-]?key)?\\s*['\\\"\\s:=]+[a-zA-Z0-9/+=]{40}",
+          "keyword": "aws"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "AWS S3 Bucket URL",
+      "patterns": [
+        {
+          "regex": "(?<![a-z0-9\\-\\.])(?!(?:github-cloud|avatars|static|assets|cdn|media|public|example|test|demo|sample|placeholder|bucket|fonts|images|img|widgets?)\\.s3)[a-z0-9\\-\\.]+\\.s3[\\.a-z0-9\\-]*\\.amazonaws\\.com",
+          "keyword": "aws"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Azure APIM Gateway",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)[a-z0-9\\-]+\\.azure-api\\.net",
+          "keyword": "azure"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Azure Client Secret",
+      "patterns": [
+        {
+          "regex": "(?i)azure[-_.\\s]{0,3}client[_-]?secret['\\\"\\s:=]+[a-zA-Z0-9~/\\-._]{36,40}",
+          "keyword": "azure"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Azure Storage Account Key",
+      "patterns": [
+        {
+          "regex": "(?i)azure[-_.\\s]{0,3}storage[-_.\\s]{0,3}account[_-]?key['\\\"\\s:=]+[a-zA-Z0-9/+]{88,}",
+          "keyword": "azure"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Azure SAS Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)\\?sv=20[0-9\\-]+&ss="
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Basic Auth Creds",
+      "patterns": [
+        {
+          "regex": "(?i)(?<!\\w)basic [A-Za-z0-9\\+=]{20,100}[^A-Za-z0-9\\+=]",
+          "keyword": "basic"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "BigML API Key",
+      "patterns": [
+        {
+          "regex": "(?i)bigml[-_.\\s]{0,3}key['\\\"\\s:=]+[a-fA-F0-9]{40}",
+          "keyword": "bigml"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Bitbucket App Password",
+      "patterns": [
+        {
+          "regex": "(?i)bitbucket[-_.\\s]{0,3}app[_-]?password['\\\"\\s:=]+[a-zA-Z0-9_=-]{20,40}",
+          "keyword": "bitbucket"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Bitbucket Secret",
+      "patterns": [
+        {
+          "regex": "(?i)bitbucket[-_.\\s]{0,3}secret['\\\"\\s:=]+[a-zA-Z0-9]{32}",
+          "keyword": "bitbucket"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Bitly Token",
+      "patterns": [
+        {
+          "regex": "(?i)bitly[-_.\\s]{0,3}access[_-]?token['\\\"\\s:=]+[a-zA-Z0-9_-]{40,50}",
+          "keyword": "bitly"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Bitly Secret Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)R_[a-fA-F0-9]{30}",
+          "keyword": "R_"
+        }
+      ],
+      "requires_context": false,
+      "note": "Reverted to R_ prefix pattern; broad 40-char hex removed due to false positives"
+    },
+    {
+      "name": "Bitly API Key",
+      "patterns": [
+        {
+          "regex": "(?i)bitly['\\\"\\s:]+[a-fA-F0-9]{40}",
+          "keyword": "bitly"
+        },
+        {
+          "regex": "(?i)use_bitly_api\\(['\"][a-f0-9]{40}",
+          "keyword": "use_bitly_api"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Braintree Private Key",
+      "patterns": [
+        {
+          "regex": "(?i)braintree[-_.\\s]{0,3}private[_-]?key['\\\"\\s:=]+[a-fA-F0-9]{30}",
+          "keyword": "braintree"
+        },
+        {
+          "regex": "(?i)braintree[-_.\\s]{0,3}private[-_.\\s]{0,3}key['\\\"\\s:]+[a-fA-F0-9]{30}",
+          "keyword": "braintree"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Branch.io Secret",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)secret_live_[a-zA-Z0-9]{25}"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Cloudflare API Key",
+      "patterns": [
+        {
+          "regex": "(?i)cloudflare[-_.\\s]{0,3}(?:global)?api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{37,80}",
+          "keyword": "cloudflare"
+        },
+        {
+          "regex": "(?i)cloudflare[-_.\\s]{0,3}api[-_.\\s]{0,3}token['\\\"\\s:]+[a-zA-Z0-9_-]{40,80}",
+          "keyword": "cloudflare"
+        },
+        {
+          "regex": "(?i)cloudflare_api_token['\\\"\\s:=]+[a-zA-Z0-9_-]{40,80}",
+          "keyword": "cloudflare_api_token"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Cloudflare Email",
+      "patterns": [
+        {
+          "regex": "(?i)cloudflare[-_.\\s]{0,3}email['\\\"\\s:=]+[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}",
+          "keyword": "cloudflare"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Cloudflare Global API Key",
+      "patterns": [
+        {
+          "regex": "(?i)(?<!\\w)CLOUDFLARE_GLOBAL_KEY['\\\"\\s:=]+[a-fA-F0-9]{37}",
+          "keyword": "cloudflare_global_key"
+        },
+        {
+          "regex": "(?i)(?<!\\w)cloudflare[-_.\\s]{0,3}global[-_.\\s]{0,3}key['\\\"\\s:]+[a-zA-Z0-9_-]{37}",
+          "keyword": "cloudflare"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Cloudflare R2 Bucket",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)[a-z0-9\\-]+\\.[a-zA-Z0-9]{36}\\.r2\\.cloudflarestorage\\.com",
+          "keyword": "cloudflare"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Cloudinary URL",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)cloudinary://[a-z0-9]{15}:[a-zA-Z0-9\\-_.]+@",
+          "keyword": "cloudinary"
+        },
+        {
+          "regex": "(?<!\\w)cloudinary://[0-9]{15}:[a-zA-Z0-9\\-_.]+@",
+          "keyword": "cloudinary"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Clojars API Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)CLOJARS_[a-z0-9]{58}",
+          "keyword": "CLOJARS"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Contentful API Key",
+      "patterns": [
+        {
+          "regex": "(?i)(?:contentful|cda)[-_.\\s]{0,3}(?:api[_-]?)?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Contentful Personal Access Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)CFPAT-[a-zA-Z0-9_\\-]{40}",
+          "keyword": "CFPAT-"
+        }
+      ],
+      "requires_context": false,
+      "note": "Removed broad pattern due to false positives (e.g., DisableExtensionPoints)"
+    },
+    {
+      "name": "Crowdin API Key",
+      "patterns": [
+        {
+          "regex": "(?i)crowdin[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-fA-F0-9]{30}",
+          "keyword": "crowdin"
+        },
+        {
+          "regex": "(?i)crowdin[-_.\\s]{0,3}api[-_.\\s]{0,3}key['\\\"\\s:]+[a-fA-F0-9]{30}",
+          "keyword": "crowdin"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Cypress Record Key",
+      "patterns": [
+        {
+          "regex": "(?i)cypress[-_.\\s]{0,3}record[_-]?key['\\\"\\s:=]+[a-fA-F0-9\\-]{36}",
+          "keyword": "cypress"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Databricks API Token",
+      "patterns": [
+        {
+          "regex": "(?i)databricks[-_.\\s]{0,3}token['\\\"\\s:=]+[a-z0-9]{32}",
+          "keyword": "databricks"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Datadog API Key",
+      "patterns": [
+        {
+          "regex": "(?i)datadog[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9]{32}",
+          "keyword": "datadog"
+        },
+        {
+          "regex": "(?i)datadog[-_.\\s]{0,3}api[-_.\\s]{0,3}key['\\\"\\s:]+[a-fA-F0-9]{23}",
+          "keyword": "datadog"
+        },
+        {
+          "regex": "(?i)datadog_api_key['\\\"\\s:=]+[a-f0-9]{23}",
+          "keyword": "datadog_api_key"
+        }
+      ],
+      "requires_context": true,
+      "note": "Removed standalone [a-f0-9]{23} pattern due to false positives"
+    },
+    {
+      "name": "Datadog App Key",
+      "patterns": [
+        {
+          "regex": "(?i)datadog[-_.\\s]{0,3}app[_-]?key['\\\"\\s:=]+[a-zA-Z0-9]{32}",
+          "keyword": "datadog"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "DigitalOcean Token",
+      "patterns": [
+        {
+          "regex": "(?i)digitalocean[-_.\\s]{0,3}(?:access[_-]?)?token['\\\"\\s:=]+[a-zA-Z0-9]{64}",
+          "keyword": "digitalocean"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "DigitalOcean Token v1",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)doo_v1_[a-fA-F0-9]{62}",
+          "keyword": "doo_v1_"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "DigitalOcean Token v2",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)dop_v1_[a-fA-F0-9]{62}",
+          "keyword": "dop_v1_"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "DigitalOcean Token v3",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)dor_v1_[a-fA-F0-9]{62}",
+          "keyword": "dor_v1_"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "DigitalOcean Token Generic",
+      "patterns": [
+        {
+          "regex": "(?i)ocean[-_.\\s]{0,3}key['\\\"\\s:]+[a-fA-F0-9]{62}",
+          "keyword": "ocean"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Discord API Token",
+      "patterns": [
+        {
+          "regex": "(?i)discord[-_.\\s]{0,3}api[_-]?token['\\\"\\s:=]+[a-zA-Z0-9_-]{24,128}",
+          "keyword": "discord"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Discord Client ID",
+      "patterns": [
+        {
+          "regex": "(?i)discord[-_.\\s]{0,3}client[_-]?id['\\\"\\s:=]+[0-9]{18,20}",
+          "keyword": "discord"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Discord Client Secret",
+      "patterns": [
+        {
+          "regex": "(?i)discord[-_.\\s]{0,3}client[_-]?secret['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "discord"
+        },
+        {
+          "regex": "(?i)discord[-_.\\s]{0,3}secret['\\\"\\s:]+[a-zA-Z0-9+/=]{33}",
+          "keyword": "discord"
+        },
+        {
+          "regex": "(?i)discord_client_secret['\\\"\\s:=]+[a-zA-Z0-9+/=]{32}",
+          "keyword": "discord_client_secret"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Discord Webhook URL",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)discord\\.com/api/webhooks/[0-9]{18}/[a-zA-Z0-9_\\-]{60,}",
+          "keyword": "discord"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Discord Webhook Protocol",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)discord://[a-zA-Z0-9_\\-]+@[0-9]{17,20}",
+          "keyword": "discord"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Doppler Token",
+      "patterns": [
+        {
+          "regex": "(?i)doppler[-_.\\s]{0,3}token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "doppler"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Doppler API Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)dp\\.pt\\.[a-zA-Z0-9]{43}"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Dropbox API Key",
+      "patterns": [
+        {
+          "regex": "(?i)dropbox[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{15,32}",
+          "keyword": "dropbox"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Dropbox Secret",
+      "patterns": [
+        {
+          "regex": "(?i)dropbox[-_.\\s]{0,3}api[_-]?secret['\\\"\\s:=]+[a-zA-Z0-9_-]{16,64}",
+          "keyword": "dropbox"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Dropbox Long Token",
+      "patterns": [
+        {
+          "regex": "(?i)(?:dropbox|dbx)[-_.\\s]{0,3}(?:access[-_.\\s]{0,3})?token['\\\"\\s:=]+sl\\.[a-zA-Z0-9_\\-]{130,140}",
+          "keyword": "dropbox"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Dropbox Access Token",
+      "patterns": [
+        {
+          "regex": "(?i)dropbox[-_.\\s]{0,3}token['\\\"\\s:]+[a-zA-Z0-9_-]{65}",
+          "keyword": "dropbox"
+        },
+        {
+          "regex": "(?i)dropbox_token['\\\"\\s:=]+[a-zA-Z0-9_-]{64}",
+          "keyword": "dropbox_token"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Duffel API Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)duffel_(?:test|live)_[a-zA-Z0-9+/=_-]{39}",
+          "keyword": "duffel"
+        },
+        {
+          "regex": "(?<!\\w)duffel_test_[a-zA-Z0-9+/=_-]{39}",
+          "keyword": "duffel"
+        },
+        {
+          "regex": "(?<!\\w)duffel_live_[a-zA-Z0-9+/=_-]{39}",
+          "keyword": "duffel"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Dynatrace Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)dt0[a-z0-9]\\.[A-Z0-9]{28}\\.[A-Z0-9a-z]{66}"
+        },
+        {
+          "regex": "(?<!\\w)dt0c1\\.[A-Z0-9]{26}\\.[A-Z0-9a-z]{66}"
+        },
+        {
+          "regex": "(?<!\\w)dt0c1[a-z]\\.[A-Z0-9]+\\.[A-Za-z0-9]+"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "EasyPost API Key",
+      "patterns": [
+        {
+          "regex": "(?i)(?:easypost|ezak)[-_.\\s]{0,3}(?:api[-_.\\s]{0,3})?key['\\\"\\s:=]+EZAK[a-zA-Z0-9]{54}",
+          "keyword": "easypost"
+        }
+      ],
+      "requires_context": true,
+      "note": "UNVERIFIED: EZAK prefix not confirmed in official documentation"
+    },
+    {
+      "name": "Firebase Service Account",
+      "patterns": [
+        {
+          "regex": "(?i)firebase[-_.\\s]{0,3}service[_-]?account['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "firebase"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Flickr API Key",
+      "patterns": [
+        {
+          "regex": "(?i)flickr[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "flickr"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Flutterwave Secret Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)FLWSECK(?:_TEST)?-[a-fA-F0-9]{30}-X",
+          "keyword": "flwseck"
+        },
+        {
+          "regex": "(?<!\\w)FLWSECK-[a-fA-F0-9]{30}-X",
+          "keyword": "flwseck"
+        },
+        {
+          "regex": "(?<!\\w)FLWSECK_TEST-[a-fA-F0-9]{30}-X",
+          "keyword": "flwseck"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Frame.io API Key",
+      "patterns": [
+        {
+          "regex": "(?i)frame\\.io[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "frame"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Frame.io Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)fio-u-[a-zA-Z0-9_\\-]{64}",
+          "keyword": "fio-u-"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Facebook App Secret",
+      "patterns": [
+        {
+          "regex": "(?i)facebook[-_.\\s]{0,3}app[_-]?secret['\\\"\\s:=]+[a-zA-Z0-9]{32}",
+          "keyword": "facebook"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Facebook Token",
+      "patterns": [
+        {
+          "regex": "(?i)facebook[-_.\\s]{0,3}access[_-]?token['\\\"\\s:=]+[a-zA-Z0-9_-]{100,255}",
+          "keyword": "facebook"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Facebook Token EAA",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)EAACEdEose0cBA[a-zA-Z0-9]+",
+          "keyword": "eaacedeose"
+        }
+      ],
+      "requires_context": false,
+      "note": "Removed broad EAA pattern, keeping specific EAACEdEose0cBA format"
+    },
+    {
+      "name": "FCM Server Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)AAAA[a-zA-Z0-9_\\-]{7,}:[a-zA-Z0-9_\\-]{132,}",
+          "keyword": "AAA"
+        },
+        {
+          "regex": "(?<!\\w)AAAA[a-zA-Z0-9_\\-]{7}:[a-zA-Z0-9_\\-/+=]{170,}",
+          "keyword": "AAA"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Fastly API Key",
+      "patterns": [
+        {
+          "regex": "(?i)fastly[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "fastly"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Finicity Client Secret",
+      "patterns": [
+        {
+          "regex": "(?i)finicity[-_.\\s]{0,3}client[_-]?secret['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "finicity"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Finicity Token",
+      "patterns": [
+        {
+          "regex": "(?i)finicity[-_.\\s]{0,3}api[_-]?token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "finicity"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Finnhub Token",
+      "patterns": [
+        {
+          "regex": "(?i)finnhub[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{20,64}",
+          "keyword": "finnhub"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Freshbooks Token",
+      "patterns": [
+        {
+          "regex": "(?i)freshbooks[-_.\\s]{0,3}token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "freshbooks"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "GCP API Key",
+      "patterns": [
+        {
+          "regex": "(?i)gcp[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "gcp"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "GCP Service Account",
+      "patterns": [
+        {
+          "regex": "(?i)gcp[-_.\\s]{0,3}service[_-]?account['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "gcp"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "GitHub Token",
+      "patterns": [
+        {
+          "regex": "(?i)github[-_.\\s]{0,3}token['\\\"\\s:=]+[a-zA-Z0-9_-]{36,255}",
+          "keyword": "github"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "GitHub PAT",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)ghp_[a-zA-Z0-9]{36}",
+          "keyword": "ghp_"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "GitHub OAuth Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)gho_[a-zA-Z0-9]{36}",
+          "keyword": "gho_"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "GitHub App Token User",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)ghu_[a-zA-Z0-9]{36}",
+          "keyword": "ghu_"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "GitHub App Token Server",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)ghs_[a-zA-Z0-9]{36}",
+          "keyword": "ghs_"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "GitHub Refresh Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)ghr_[a-zA-Z0-9]{76}",
+          "keyword": "ghr_"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "GitLab Personal Token",
+      "patterns": [
+        {
+          "regex": "(?i)gitlab[-_.\\s]{0,3}personal[_-]?access[_-]?token['\\\"\\s:=]+[a-zA-Z0-9_-]{20,64}",
+          "keyword": "gitlab"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "GitLab Fine Grained PAT",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)github_pat_[a-zA-Z0-9_]{77}",
+          "keyword": "github"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "GitLab PAT",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)glpat-[a-zA-Z0-9_\\-]{20}",
+          "keyword": "glpat-"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "GitLab Pipeline Trigger Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)glptt-[a-fA-F0-9]{40}",
+          "keyword": "glptt-"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "GitLab Runner Token",
+      "patterns": [
+        {
+          "regex": "(?i)gitlab[-_.\\s]{0,3}runner[-_.\\s]{0,3}token['\\\"\\s:=]+[a-zA-Z0-9_-]{20,64}",
+          "keyword": "gitlab"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "GitLab Shared Secret",
+      "patterns": [
+        {
+          "regex": "(?i)gitlab[-_.\\s]{0,3}shared[_-]?secret['\\\"\\s:=]+[a-zA-Z0-9_-]{20,64}",
+          "keyword": "gitlab"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "GitLab Token",
+      "patterns": [
+        {
+          "regex": "(?i)gitlab[-_.\\s]{0,3}token['\\\"\\s:=]+[a-zA-Z0-9_-]{20,64}",
+          "keyword": "gitlab"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Gitlab Runner Registration Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)GR1348941[a-zA-Z0-9_\\-]{20}",
+          "keyword": "GR1348941"
+        },
+        {
+          "regex": "(?<!\\w)glrt-[a-zA-Z0-9_\\-]{20,}",
+          "keyword": "glrt"
+        }
+      ],
+      "requires_context": false,
+      "note": "Deprecated GR1348941 format and modern glrt- prefix"
+    },
+    {
+      "name": "Gitter Access Token",
+      "patterns": [
+        {
+          "regex": "(?i)gitter[-_.\\s]{0,3}access[_-]?token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "gitter"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Grafana API Key",
+      "patterns": [
+        {
+          "regex": "(?i)grafana[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "grafana"
+        },
+        {
+          "regex": "(?i)grafana[-_.\\s]{0,3}key['\\\"\\s:=]+eyJ[a-zA-Z0-9+/=]{100,}"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Grafana Token",
+      "patterns": [
+        {
+          "regex": "(?i)grafana[-_.\\s]{0,3}token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "grafana"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Gocardless Token",
+      "patterns": [
+        {
+          "regex": "(?i)gocardless[-_.\\s]{0,3}access[_-]?token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "gocardless"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Google API Key",
+      "patterns": [
+        {
+          "regex": "(?i)google[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "google"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Google API Key AIza",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)AIza[a-zA-Z0-9_\\-]{35}",
+          "keyword": "AIza"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Google Client Secret",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)GOCSPX-[a-zA-Z0-9_\\-]{21}",
+          "keyword": "GOCSPX"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Google OAuth ID",
+      "patterns": [
+        {
+          "regex": "(?i)google[-_.\\s]{0,3}oauth[-_.\\s]{0,3}client[_-]?id['\\\"\\s:=]+[a-zA-Z0-9_-]{32,128}",
+          "keyword": "google"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Google OAuth Secret",
+      "patterns": [
+        {
+          "regex": "(?i)google[-_.\\s]{0,3}oauth[-_.\\s]{0,3}client[_-]?secret['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "google"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Google OAuth Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)ya29\\.[a-zA-Z0-9_\\-]{60}",
+          "keyword": "ya29"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Google Refresh Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)1//0[a-zA-Z0-9_\\-]{62}"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Google Recaptcha Secret",
+      "patterns": [
+        {
+          "regex": "(?i)captcha[-_.\\s]{0,3}secret['\\\"\\s:=]+6[a-zA-Z0-9_\\-]{39}",
+          "keyword": "captcha"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "HelpShift API Key",
+      "patterns": [
+        {
+          "regex": "(?i)helpshift[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[A-Za-z0-9+/]{40}",
+          "keyword": "helpshift"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Heroku API Key",
+      "patterns": [
+        {
+          "regex": "(?i)heroku[_\\s]*?(?:api|auth|key|token)[-_.\\s]{0,3}?['\"\\s:=]+[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}",
+          "keyword": "heroku"
+        }
+      ],
+      "requires_context": true,
+      "note": "Requires key/api/auth/token keyword near heroku to avoid JSON domain false positives"
+    },
+    {
+      "name": "HubSpot API Key",
+      "patterns": [
+        {
+          "regex": "(?i)hubspot[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{36,64}",
+          "keyword": "hubspot"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Infura API Key",
+      "patterns": [
+        {
+          "regex": "(?i)infura[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-fA-F0-9]{30}",
+          "keyword": "infura"
+        },
+        {
+          "regex": "(?i)infura['\\\"\\s:]+[a-fA-F0-9]{30}",
+          "keyword": "infura"
+        },
+        {
+          "regex": "(?i)infura_project_id['\\\"\\s:=]+[a-fA-F0-9]{30}",
+          "keyword": "infura_project_id"
+        }
+      ],
+      "requires_context": true,
+      "note": "Removed standalone [a-fA-F0-9]{30} pattern due to false positives"
+    },
+    {
+      "name": "Intercom Token",
+      "patterns": [
+        {
+          "regex": "(?i)intercom[-_.\\s]{0,3}access[_-]?token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "intercom"
+        },
+        {
+          "regex": "(?i)intercom[-_.\\s]{0,3}api['\\\"\\s:]+[a-fA-F0-9]{40}",
+          "keyword": "intercom"
+        },
+        {
+          "regex": "(?i)INTERCOM_API_SECRET['\\\"\\s:=]+[a-f0-9]{40}",
+          "keyword": "intercom_api_secret"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Ionic Token",
+      "patterns": [
+        {
+          "regex": "(?i)ionic[-_.\\s]{0,3}api[_-]?token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "ionic"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Ipstack API Key",
+      "patterns": [
+        {
+          "regex": "(?i)ipstack[-_.\\s]{0,3}access[_-]?key['\\\"\\s:=]+[a-fA-F0-9]{30}",
+          "keyword": "ipstack"
+        },
+        {
+          "regex": "(?i)ipstack[-_.\\s]{0,3}access[-_.\\s]{0,3}key['\\\"\\s:]+[a-fA-F0-9]{30}",
+          "keyword": "ipstack"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Iterable API Key",
+      "patterns": [
+        {
+          "regex": "(?i)iterable[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-fA-F0-9]{30}",
+          "keyword": "iterable"
+        },
+        {
+          "regex": "(?i)iterable[-_.\\s]{0,3}api[-_.\\s]{0,3}key['\\\"\\s:]+[a-fA-F0-9]{30}",
+          "keyword": "iterable"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "JWT Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)eyJ[a-zA-Z0-9_-]{10,}\\.[a-zA-Z0-9_-]{10,}\\.[a-zA-Z0-9_-]{10,}"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Klaviyo Private API Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)pk_[a-z0-9]{35}"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "JumpCloud API Key",
+      "patterns": [
+        {
+          "regex": "(?i)jumpcloud[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "jumpcloud"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "JWT Authorization Header",
+      "patterns": [
+        {
+          "regex": "(?i)(?<!\\w)authorization[:\\s]*bearer[:\\s]*eyJ[a-zA-Z0-9_-]*\\.[a-zA-Z0-9_-]*\\.[a-zA-Z0-9_-]*"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Kloudless API Key",
+      "patterns": [
+        {
+          "regex": "(?i)kloudless[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "kloudless"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Kubernetes Token",
+      "patterns": [
+        {
+          "regex": "(?i)kubernetes[-_.\\s]{0,3}token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "kubernetes"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "LaunchDarkly Token",
+      "patterns": [
+        {
+          "regex": "(?i)launchdarkly[-_.\\s]{0,3}api[_-]?token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "launchdarkly"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Linear API Key",
+      "patterns": [
+        {
+          "regex": "(?i)linear[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "linear"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "LinkedIn Client ID",
+      "patterns": [
+        {
+          "regex": "(?i)linkedin[-_.\\s]{0,3}client[_-]?id['\\\"\\s:=]+[a-zA-Z0-9_-]{16,32}",
+          "keyword": "linkedin"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "LinkedIn Secret Key",
+      "patterns": [
+        {
+          "regex": "(?i)linkedin[-_.\\s]{0,3}secret['\\\"\\s:=]+[a-zA-Z0-9_\\-]{10,50}",
+          "keyword": "linkedin"
+        }
+      ],
+      "requires_context": true,
+      "note": "Variable length with mixed case and special characters"
+    },
+    {
+      "name": "Lob API Key",
+      "patterns": [
+        {
+          "regex": "(?i)lob[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "lob"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Lob Test Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)test_[a-fA-F0-9]{35}",
+          "keyword": "test"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Lob Live Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)live_[a-fA-F0-9]{35}",
+          "keyword": "live"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Mailchimp API Key",
+      "patterns": [
+        {
+          "regex": "(?i)mailchimp[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "mailchimp"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Mailgun Public API Key",
+      "patterns": [
+        {
+          "regex": "(?i)mailgun[-_.\\s]{0,3}public[_-]?api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "mailgun"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Mailgun Signature",
+      "patterns": [
+        {
+          "regex": "(?i)mailgun[-_.\\s]{0,3}signature['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "mailgun"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Mailgun API Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)key-[a-zA-Z0-9]{32}"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "MapBox API Key",
+      "patterns": [
+        {
+          "regex": "(?i)mapbox[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "mapbox"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Mapbox Secret Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)sk\\.[a-zA-Z0-9\\._\\-]{80,240}"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Mattermost Access Token",
+      "patterns": [
+        {
+          "regex": "(?i)mattermost[-_.\\s]{0,3}auth['\\\"\\s:=]+[a-z]{26}",
+          "keyword": "mattermost"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Mailosaur API Key",
+      "patterns": [
+        {
+          "regex": "(?i)mailosaur[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9]{15,16}",
+          "keyword": "mailosaur"
+        },
+        {
+          "regex": "(?i)mailosaur['\\\"\\s:]+[a-zA-Z0-9]{15,16}",
+          "keyword": "mailosaur"
+        },
+        {
+          "regex": "(?i)mailosaur_key['\\\"\\s:=]+[a-zA-Z0-9]{15,16}",
+          "keyword": "mailosaur"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Microsoft Teams Webhook",
+      "patterns": [
+        {
+          "regex": "(?i)(?<!\\w)microsoft[-_.\\s]{0,3}teams[-_.\\s]{0,3}webhook['\\\"\\s:=]+[a-zA-Z0-9_-]{32,128}",
+          "keyword": "microsoft"
+        },
+        {
+          "regex": "(?<!\\w)IncomingWebhook/[a-fA-F0-9]{30}/",
+          "keyword": "incomingwebhook"
+        },
+        {
+          "regex": "(?<!\\w)webhook/abc\\.\\.\\./IncomingWebhook/[a-f0-9]{30}",
+          "keyword": "webhook"
+        },
+        {
+          "regex": "(?<!\\w)IncomingWebhook/[a-f0-9]{30}/",
+          "keyword": "incomingwebhook"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "MojoAuth Token",
+      "patterns": [
+        {
+          "regex": "(?i)mojoauth[-_.\\s]{0,3}api[_-]?token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "mojoauth"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Netlify Access Token",
+      "patterns": [
+        {
+          "regex": "(?i)netlify[-_.\\s]{0,3}token['\\\"\\s:=]+[a-zA-Z0-9_\\-]{40,46}",
+          "keyword": "netlify"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "New Relic API Key",
+      "patterns": [
+        {
+          "regex": "(?i)newrelic[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "newrelic"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "New Relic Browser Key",
+      "patterns": [
+        {
+          "regex": "(?i)newrelic[-_.\\s]{0,3}browser[-_.\\s]{0,3}key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "newrelic"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "New Relic Insights Key",
+      "patterns": [
+        {
+          "regex": "(?i)newrelic[-_.\\s]{0,3}insights[-_.\\s]{0,3}key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "newrelic"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "New Relic License Key",
+      "patterns": [
+        {
+          "regex": "(?i)newrelic[-_.\\s]{0,3}license[-_.\\s]{0,3}key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "newrelic"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "New Relic Admin Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)NRAA-[a-fA-F0-9]{25}",
+          "keyword": "NRAA-"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "New Relic Insights Key Fixed",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)NRI[IQ]-[a-zA-Z0-9_\\-]{31}",
+          "keyword": "nri"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "New Relic Rest Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)NRRA-[a-fA-F0-9]{42}",
+          "keyword": "NRRA-"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "New Relic Synthetics Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)NRSP-[A-Z0-9]{4}[a-zA-Z0-9]{33}",
+          "keyword": "NRSP-"
+        },
+        {
+          "regex": "(?<!\\w)NRSP-[A-Z]{2}\\d{2}[a-zA-Z0-9]{32}",
+          "keyword": "NRSP-"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "New Relic User Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)NRAK-[a-zA-Z0-9]{26}",
+          "keyword": "nrak"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "NPM Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)npm_[a-zA-Z0-9]{36}",
+          "keyword": "npm"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Notion API Key",
+      "patterns": [
+        {
+          "regex": "(?i)notion[-_.\\s]{0,3}secret['\\\"\\s:=]+[a-zA-Z0-9_-]{43}",
+          "keyword": "notion"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "NuGet API Key",
+      "patterns": [
+        {
+          "regex": "(?i)nuget[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}",
+          "keyword": "nuget"
+        }
+      ],
+      "requires_context": true,
+      "note": "Made context-aware due to GUID format being too broad for standalone detection"
+    },
+    {
+      "name": "Oculus App Secret",
+      "patterns": [
+        {
+          "regex": "(?i)oculus[-_.\\s]{0,3}app[_-]?secret['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "oculus"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "OKTA Client ID",
+      "patterns": [
+        {
+          "regex": "(?i)okta[-_.\\s]{0,3}client[_-]?id['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "okta"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "OKTA Token",
+      "patterns": [
+        {
+          "regex": "(?i)okta[-_.\\s]{0,3}token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "okta"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Okta API Token",
+      "patterns": [
+        {
+          "regex": "(?i)okta[-_.\\s]{0,3}api[_-]?token['\\\"\\s:=]+00[a-zA-Z0-9_\\-]{40}",
+          "keyword": "okta"
+        }
+      ],
+      "requires_context": true,
+      "note": "Made context-aware due to 00 prefix being too broad for standalone detection"
+    },
+    {
+      "name": "Omise Token",
+      "patterns": [
+        {
+          "regex": "(?i)omise[-_.\\s]{0,3}api[_-]?token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "omise"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "OpenAI API Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)sk-[a-zA-Z0-9]{48}"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "PagerDuty Token",
+      "patterns": [
+        {
+          "regex": "(?i)pagerduty[-_.\\s]{0,3}token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "pagerduty"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "PayPal Braintree Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)access_token\\$production\\$[a-z]+\\$[a-fA-F0-9]{30}",
+          "keyword": "access"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "PayPal Secret",
+      "patterns": [
+        {
+          "regex": "(?i)paypal[-_.\\s]{0,3}secret['\\\"\\s:=]+E[a-zA-Z0-9_\\-]{59,79}",
+          "keyword": "paypal"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "PlanGrid Token",
+      "patterns": [
+        {
+          "regex": "(?i)plangrid[-_.\\s]{0,3}token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "plangrid"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Plaid Client ID",
+      "patterns": [
+        {
+          "regex": "(?i)plaid[-_.\\s]{0,3}client[_-]?id['\\\"\\s:=]+[a-zA-Z0-9_-]{16,32}",
+          "keyword": "plaid"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Plaid Secret",
+      "patterns": [
+        {
+          "regex": "(?i)plaid[-_.\\s]{0,3}secret['\\\"\\s:=]+[a-fA-F0-9]{40,}",
+          "keyword": "plaid"
+        },
+        {
+          "regex": "(?i)plaid[-_.\\s]{0,3}secret['\\\"\\s:]+[a-fA-F0-9]{40,}",
+          "keyword": "plaid"
+        }
+      ],
+      "requires_context": true,
+      "note": "Removed standalone 64-char hex pattern due to false positives"
+    },
+    {
+      "name": "PlanetScale API Key",
+      "patterns": [
+        {
+          "regex": "(?i)planetscale[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "planetscale"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Pocket Consumer Key",
+      "patterns": [
+        {
+          "regex": "(?i)pocket[-_.\\s]{0,3}consumer[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "pocket"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Posthog Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)phc_[a-zA-Z0-9_\\-]{43}",
+          "keyword": "phc_"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Postmark API Key",
+      "patterns": [
+        {
+          "regex": "(?i)postmark[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "postmark"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Postmark Account Token",
+      "patterns": [
+        {
+          "regex": "(?i)postmark[-_.\\s]{0,3}account[-_.\\s]{0,3}token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "postmark"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Prefect Token",
+      "patterns": [
+        {
+          "regex": "(?i)prefect[-_.\\s]{0,3}api[_-]?token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "prefect"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Private Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)-----BEGIN [A-Z]+ PRIVATE KEY-----"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Private Key (Legacy)",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)-----BEGIN RSA PRIVATE KEY-----"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Pulumi API Token",
+      "patterns": [
+        {
+          "regex": "(?i)pulumi[-_.\\s]{0,3}api[_-]?token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "pulumi"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "PyPI Upload Token",
+      "patterns": [
+        {
+          "regex": "(?i)pypi[-_.\\s]{0,3}token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "pypi"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Pusher App ID",
+      "patterns": [
+        {
+          "regex": "(?i)pusher[-_.\\s]{0,3}app[_-]?id['\\\"\\s:=]+[0-9]{6,10}",
+          "keyword": "pusher"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Pusher Key",
+      "patterns": [
+        {
+          "regex": "(?i)pusher[-_.\\s]{0,3}key['\\\"\\s:=]+[a-zA-Z0-9_-]{20,40}",
+          "keyword": "pusher"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Pusher Secret",
+      "patterns": [
+        {
+          "regex": "(?i)pusher[-_.\\s]{0,3}secret['\\\"\\s:=]+[a-zA-Z0-9_-]{20,40}",
+          "keyword": "pusher"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Razorpay Secret",
+      "patterns": [
+        {
+          "regex": "(?i)razorpay[-_.\\s]{0,3}secret['\\\"\\s:=]+[a-zA-Z0-9]{23}",
+          "keyword": "razorpay"
+        },
+        {
+          "regex": "(?i)razorpay['\\\"\\s:=]+[\"']?[a-zA-Z0-9]{23}[\"']?",
+          "keyword": "razorpay"
+        },
+        {
+          "regex": "(?i)razorpay_secret_key['\\\"\\s:=]+[\\s\\\"'][a-zA-Z0-9]{24}[\\s\\\"']",
+          "keyword": "razorpay_secret_key"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Riot Games API Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)RGAPI-[a-fA-F0-9\\-]{36}",
+          "keyword": "RGAPI-"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Salesforce Token",
+      "patterns": [
+        {
+          "regex": "(?i)(?:salesforce|sfdc|sf)[-_.\\s]{0,3}(?:access[-_.\\s]{0,3})?token['\\\"\\s:=]+00D[a-zA-Z0-9!%]{100,}"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "SauceLabs Key",
+      "patterns": [
+        {
+          "regex": "(?i)sauce[-_.\\s]{0,3}access[_-]?key['\\\"\\s:=]+[a-fA-F0-9\\-]{36}",
+          "keyword": "sauce"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "SendGrid API Key",
+      "patterns": [
+        {
+          "regex": "(?i)sendgrid[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "sendgrid"
+        },
+        {
+          "regex": "SG\\.[a-zA-Z0-9_\\-]{32}\\.[a-zA-Z0-9_\\-]{60}"
+        },
+        {
+          "regex": "SG\\.[a-zA-Z0-9_\\-]{22}\\.[a-zA-Z0-9_\\-]{22}\\.[a-zA-Z0-9_\\-/+=]{43}"
+        },
+        {
+          "regex": "SG\\.[a-zA-Z0-9_\\-]{32}\\.[a-zA-Z0-9_\\-]+"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "SendGrid Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)SG\\.[a-zA-Z0-9_\\-]{32}\\.[a-zA-Z0-9_\\-]{60}"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "SendInBlue API Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)xkeysib-[a-zA-Z0-9_\\-]{79}",
+          "keyword": "xkeysib"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Shippo Token",
+      "patterns": [
+        {
+          "regex": "(?i)shippo[-_.\\s]{0,3}api[_-]?token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "shippo"
+        },
+        {
+          "regex": "shippo_(?:test|live)_[a-fA-F0-9]{40}",
+          "keyword": "shippo"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Shopify Access Token",
+      "patterns": [
+        {
+          "regex": "(?i)shopify[-_.\\s]{0,3}access[_-]?token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "shopify"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Shopify Client ID",
+      "patterns": [
+        {
+          "regex": "(?i)shopify[-_.\\s]{0,3}client[_-]?id['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "shopify"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Shopify Client Secret",
+      "patterns": [
+        {
+          "regex": "(?i)shopify[-_.\\s]{0,3}client[_-]?secret['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "shopify"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Shopify Private App Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)shppa_[a-fA-F0-9]{30}",
+          "keyword": "shppa_"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Shopify Custom App Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)shpca_[a-fA-F0-9]{30}",
+          "keyword": "shpca_"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Shopify Secret",
+      "patterns": [
+        {
+          "regex": "(?i)shopify[-_.\\s]{0,3}secret['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "shopify"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Shopify Shared Secret",
+      "patterns": [
+        {
+          "regex": "(?i)shopify[-_.\\s]{0,3}shared[_-]?secret['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "shopify"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Shopify Access Token shpat",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)shpat_[a-fA-F0-9]{32}",
+          "keyword": "shpat_"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Shopify Shared Secret shpss",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)shpss_[a-fA-F0-9]{32}",
+          "keyword": "shpss_"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Sidekiq Secret",
+      "patterns": [
+        {
+          "regex": "(?i)sidekiq[-_.\\s]{0,3}secret['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "sidekiq"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Slack Token",
+      "patterns": [
+        {
+          "regex": "(?i)(?:slack|bot|user)[-_.\\s]{0,3}token['\\\"\\s:=]+[xa-z0-9-]{12,24}\\.[a-zA-Z0-9_-]{12,24}\\.[a-zA-Z0-9_-]{24,64}",
+          "keyword": "slack"
+        },
+        {
+          "regex": "xoxb-[0-9]+-[0-9]+-[a-zA-Z0-9_\\-]+",
+          "keyword": "xoxb-"
+        },
+        {
+          "regex": "xoxp-[0-9]+-[0-9]+-[a-z]+-[a-zA-Z0-9]+",
+          "keyword": "xoxp"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Slack Bot Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)xoxb-[0-9]{10,12}-[0-9]{12,15}-[a-zA-Z0-9_\\-]{24,}",
+          "keyword": "xoxb-"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Slack User Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)xoxp-[0-9]{10,12}-[0-9]{12,15}-[a-z0-9]{24}-[a-zA-Z0-9]{10,}",
+          "keyword": "xoxp"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Slack Webhook",
+      "patterns": [
+        {
+          "regex": "(?i)slack[-_.\\s]{0,3}webhook['\\\"\\s:=]+https://hooks\\.slack\\.com/services/[A-Z0-9]{9,12}/[A-Z0-9]{9,12}/[A-Za-z0-9_-]{24}"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Slack Webhook Path",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)/services/T[A-Z0-9]{8,12}/B[A-Z0-9]{8,12}/[A-Za-z0-9_\\-]{25}"
+        },
+        {
+          "regex": "(?<!\\w)/services/T[A-Z0-9]+/B[A-Z0-9]+/[A-Za-z0-9_\\-]+"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "SmartCloud API Key",
+      "patterns": [
+        {
+          "regex": "(?i)smartcloud[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "smartcloud"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "SnapChat Client ID",
+      "patterns": [
+        {
+          "regex": "(?i)snapchat[-_.\\s]{0,3}client[_-]?id['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "snapchat"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "SnapChat Client Secret",
+      "patterns": [
+        {
+          "regex": "(?i)snapchat[-_.\\s]{0,3}client[_-]?secret['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "snapchat"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Socialbakers API Key",
+      "patterns": [
+        {
+          "regex": "(?i)socialbakers[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "socialbakers"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "SonarQube Token",
+      "patterns": [
+        {
+          "regex": "(?i)sonar[-_.\\s]{0,3}token['\\\"\\s:=]+[a-fA-F0-9]{40}",
+          "keyword": "sonar"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Square Access Token",
+      "patterns": [
+        {
+          "regex": "(?i)square[-_.\\s]{0,3}access[_-]?token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "square"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Square Client ID",
+      "patterns": [
+        {
+          "regex": "(?i)square[-_.\\s]{0,3}client[_-]?id['\\\"\\s:=]+[a-zA-Z0-9_-]{16,32}",
+          "keyword": "square"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Square Client Secret",
+      "patterns": [
+        {
+          "regex": "(?i)square[-_.\\s]{0,3}client[_-]?secret['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "square"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Square OAuth Secret",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)sq0csp-[a-zA-Z0-9_\\-]{43}",
+          "keyword": "sq0csp-"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Square Access Token sq0atp",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)sq0atp-[a-zA-Z0-9_\\-]{21}",
+          "keyword": "sq0atp-"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Facebook Extended Token (EAAAE)",
+      "patterns": [
+        {
+          "regex": "(?i)(?:facebook|fb)[-_.\\s]{0,3}(?:access[-_.\\s]{0,3})?token['\\\"\\s:=]+EAAAE[a-zA-Z0-9_\\-]{58}",
+          "keyword": "facebook"
+        }
+      ],
+      "requires_context": true,
+      "note": "Facebook token format, not Square"
+    },
+    {
+      "name": "SSH RSA Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQ"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "SSH DSS Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)ssh-dss AAAAB3NzaC1kc3MAAACBA"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "SSH ECDSA 256 Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTY",
+          "keyword": "ecdsa"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "SSH ECDSA 384 Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)ecdsa-sha2-nistp384 AAAAE2VjZHNhLXNoYTItbmlzdHAzODQ",
+          "keyword": "ecdsa"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "SSH ECDSA 521 Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjE",
+          "keyword": "ecdsa"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "SSH Ed25519 Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAI"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "StackHawk API Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)hawk\\.[a-zA-Z0-9_\\-]{20}\\.[a-zA-Z0-9_\\-]{21}",
+          "keyword": "hawk"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Statsig Secret Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)secret-[a-zA-Z0-9]{41}"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Statuspage Token",
+      "patterns": [
+        {
+          "regex": "(?i)statuspage[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "statuspage"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Stripe API Key",
+      "patterns": [
+        {
+          "regex": "(?i)stripe[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[sa-zA-Z0-9]{32,64}",
+          "keyword": "stripe"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Stripe Key",
+      "patterns": [
+        {
+          "regex": "(?i)stripe[-_.\\s]{0,3}key['\\\"\\s:=]+[sa-zA-Z0-9]{32,64}",
+          "keyword": "stripe"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Stripe Secret",
+      "patterns": [
+        {
+          "regex": "(?i)stripe[-_.\\s]{0,3}secret['\\\"\\s:=]+[sa-zA-Z0-9]{32,64}",
+          "keyword": "stripe"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Stripe Test Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)sk_test_[a-zA-Z0-9]{24,}",
+          "keyword": "sk_test_"
+        }
+      ],
+      "requires_context": false,
+      "note": "Variable length (24-99+ chars)"
+    },
+    {
+      "name": "Stripe Live Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)sk_live_[a-zA-Z0-9]{24,}",
+          "keyword": "sk_live_"
+        }
+      ],
+      "requires_context": false,
+      "note": "Variable length (24-99+ chars)"
+    },
+    {
+      "name": "Stripe Restricted Test Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)rk_test_[a-zA-Z0-9]{24,}",
+          "keyword": "rk_test_"
+        }
+      ],
+      "requires_context": false,
+      "note": "Variable length (24-99+ chars)"
+    },
+    {
+      "name": "Stripe Restricted Live Key",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)rk_live_[a-zA-Z0-9]{24,}",
+          "keyword": "rk_live_"
+        }
+      ],
+      "requires_context": false,
+      "note": "Variable length (24-99+ chars)"
+    },
+    {
+      "name": "SumoLogic Access ID",
+      "patterns": [
+        {
+          "regex": "(?i)sumologic[-_.\\s]{0,3}access[_-]?id['\\\"\\s:=]+[a-zA-Z0-9_-]{16,32}",
+          "keyword": "sumologic"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "SumoLogic Access Key",
+      "patterns": [
+        {
+          "regex": "(?i)sumologic[-_.\\s]{0,3}access[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "sumologic"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Telegram Bot Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)\\d{10}:AA[a-zA-Z0-9_\\-]{32}"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Terraform Cloud Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)[a-zA-Z0-9\\-]{14}\\.atlasv1\\.[a-zA-Z0-9\\-]{67}"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Tencent Secret ID",
+      "patterns": [
+        {
+          "regex": "(?i)tencent[-_.\\s]{0,3}secret[_-]?id['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "tencent"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Tencent Secret Key",
+      "patterns": [
+        {
+          "regex": "(?i)tencent[-_.\\s]{0,3}secret[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "tencent"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Terraform API Token",
+      "patterns": [
+        {
+          "regex": "(?i)terraform[-_.\\s]{0,3}api[_-]?token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "terraform"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Trello API Key",
+      "patterns": [
+        {
+          "regex": "(?i)trello[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "trello"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Trello Token",
+      "patterns": [
+        {
+          "regex": "(?i)trello[-_.\\s]{0,3}token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "trello"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Twilio Account SID",
+      "patterns": [
+        {
+          "regex": "(?i)twilio[-_.\\s]{0,3}account[-_.\\s]{0,3}sid['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "twilio"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Twilio API Key",
+      "patterns": [
+        {
+          "regex": "(?i)twilio[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "twilio"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Twilio Token",
+      "patterns": [
+        {
+          "regex": "(?i)twilio[-_.\\s]{0,3}token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "twilio"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Twilio API Key SID",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)SK[a-fA-F0-9]{30}"
+        },
+        {
+          "regex": "(?<!\\w)[\"']\\s*SK[a-fA-F0-9]{30}\\s*[\"']"
+        },
+        {
+          "regex": "(?<!\\w) SK[a-fA-F0-9]{30} "
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Twitch API Key",
+      "patterns": [
+        {
+          "regex": "(?i)twitch[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "twitch"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Twitter API Key",
+      "patterns": [
+        {
+          "regex": "(?i)twitter[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "twitter"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Twitter Client ID",
+      "patterns": [
+        {
+          "regex": "(?i)twitter[-_.\\s]{0,3}client[_-]?id['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "twitter"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Twitter Client Secret",
+      "patterns": [
+        {
+          "regex": "(?i)twitter[-_.\\s]{0,3}client[_-]?secret['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "twitter"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Twitter Secret",
+      "patterns": [
+        {
+          "regex": "(?i)twitter[-_.\\s]{0,3}secret['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "twitter"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Twitter Bearer Token",
+      "patterns": [
+        {
+          "regex": "(?i)twitter[-_.\\s]{0,3}bearer[-_.\\s]{0,3}token['\\\"\\s:=]+AAAAAAAA[a-zA-Z0-9%]{90}",
+          "keyword": "twitter"
+        }
+      ],
+      "requires_context": true,
+      "note": "Made context-aware due to AAAAA... pattern being too broad for standalone detection"
+    },
+    {
+      "name": "Typeform Token",
+      "patterns": [
+        {
+          "regex": "(?i)(?<!\\w)typeform[-_.\\s]{0,3}token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "typeform"
+        },
+        {
+          "regex": "(?<!\\w)tfp_[a-zA-Z0-9_\\-+=]{53,}",
+          "keyword": "tfp_"
+        },
+        {
+          "regex": "(?<!\\w)tfp_[a-zA-Z0-9_\\-+=]{53}",
+          "keyword": "tfp_"
+        },
+        {
+          "regex": "(?<!\\w)tfp_[a-zA-Z0-9_\\-=+]+",
+          "keyword": "tfp_"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Uber Server Token",
+      "patterns": [
+        {
+          "regex": "(?i)uber[-_.\\s]{0,3}server[_-]?token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "uber"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Vault Token",
+      "patterns": [
+        {
+          "regex": "(?i)vault[-_.\\s]{0,3}token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "vault"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Vercel Token",
+      "patterns": [
+        {
+          "regex": "(?i)vercel[-_.\\s]{0,3}token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "vercel"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Vonage API Key",
+      "patterns": [
+        {
+          "regex": "(?i)vonage[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "vonage"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Vonage Secret",
+      "patterns": [
+        {
+          "regex": "(?i)vonage[-_.\\s]{0,3}secret['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "vonage"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "WeChat Pay Key",
+      "patterns": [
+        {
+          "regex": "(?i)wechat[-_.\\s]{0,3}pay[-_.\\s]{0,3}key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "wechat"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Xero Client ID",
+      "patterns": [
+        {
+          "regex": "(?i)xero[-_.\\s]{0,3}client[_-]?id['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "xero"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Xero Client Secret",
+      "patterns": [
+        {
+          "regex": "(?i)xero[-_.\\s]{0,3}client[_-]?secret['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "xero"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Yandex API Key",
+      "patterns": [
+        {
+          "regex": "(?i)(?:yandex|ya)[-_.\\s]{0,3}(?:api[-_.\\s]{0,3})?key['\\\"\\s:=]+AQVN[a-zA-Z0-9_\\-]{35,38}"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Yotpo API Key",
+      "patterns": [
+        {
+          "regex": "(?i)yotpo[-_.\\s]{0,3}key['\\\"\\s:=]+[a-zA-Z0-9]{24}",
+          "keyword": "yotpo"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Zendesk Access Token",
+      "patterns": [
+        {
+          "regex": "(?i)zendesk[-_.\\s]{0,3}access[_-]?token['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "zendesk"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Zoom API Key",
+      "patterns": [
+        {
+          "regex": "(?i)zoom[-_.\\s]{0,3}api[_-]?key['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "zoom"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Zoom Secret",
+      "patterns": [
+        {
+          "regex": "(?i)zoom[-_.\\s]{0,3}secret['\\\"\\s:=]+[a-zA-Z0-9_-]{32,64}",
+          "keyword": "zoom"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Asana Personal Access Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)\\d/\\d{16}:[a-fA-F0-9]{32}"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Amazon MWS Auth Token",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)amzn\\.mws\\.[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}",
+          "keyword": "amzn"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Amazon Cognito Pool ID",
+      "patterns": [
+        {
+          "regex": "(?i)pool['\\\"\\s:]+[a-z]{2}-[a-z]+-\\d:[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}",
+          "keyword": "pool"
+        },
+        {
+          "regex": "[a-z]{2}-[a-z]+-\\d:[a-f0-9-]{36}"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Amazon Cognito Client ID",
+      "patterns": [
+        {
+          "regex": "(?i)cognito[_\\s]*client[_\\s]*id['\\\"\\s:=]+[a-zA-Z0-9]{26}",
+          "keyword": "cognito"
+        },
+        {
+          "regex": "(?i)poolid['\\\"\\s:=]+[a-zA-Z0-9]{26}",
+          "keyword": "poolid"
+        }
+      ],
+      "requires_context": true,
+      "note": "Removed wildcards between cognito/client to prevent matching across large JSON blobs"
+    },
+    {
+      "name": "AWS Secret Access Key",
+      "patterns": [
+        {
+          "regex": "(?i)aws[-_.\\s]{0,3}secret['\\\"\\s:]+[a-zA-Z0-9/+]{40}",
+          "keyword": "aws"
+        },
+        {
+          "regex": "(?i)AWS_SECRET_ACCESS_KEY['\\\"\\s:=]+[a-zA-Z0-9/+]{40}",
+          "keyword": "aws_secret_access_key"
+        },
+        {
+          "regex": "(?i)SecretKey['\\\"\\s:=]+[a-zA-Z0-9/+]{40}",
+          "keyword": "SecretKey"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "AWS S3 Bucket Path Style",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)s3[\\.\\-][a-z0-9\\-]+\\.amazonaws\\.com/(?!(?:css|js|img|images|static|assets|fonts|media|public|favicon|example|bucket|test|demo|sample|placeholder|widgets?|node_modules)(?![a-z0-9\\.\\-_]))[a-z0-9][a-z0-9\\.\\-_]{2,62}",
+          "keyword": "aws"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Azure Storage Access Key",
+      "patterns": [
+        {
+          "regex": "(?i)azure[-_.\\s]{0,3}storage['\\\"\\s:]+[a-zA-Z0-9/+]{88}",
+          "keyword": "azure"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Basic Auth Creds",
+      "patterns": [
+        {
+          "regex": "(?i)(?<!\\w)basic [A-Za-z0-9+=]{20,100}==?",
+          "keyword": "basic"
+        },
+        {
+          "regex": "(?i)(?<!\\w)authorization:[\\s\"]*basic [A-Za-z0-9+=]{20,}",
+          "keyword": "authorization"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Discord Webhook 1",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)discord\\.com/api/webhooks/[0-9]{17,20}/[a-zA-Z0-9_\\-]{59,}",
+          "keyword": "discord"
+        },
+        {
+          "regex": "(?<!\\w)discord\\.com/api/webhooks/[0-9]+/[a-zA-Z0-9_\\-]+",
+          "keyword": "discord"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Generic Password 1",
+      "patterns": [
+        {
+          "regex": "(?i)password['\\\"\\s:=]+[\"'](?![^\"']*(?:password|kennwort|passwort|contrase|wachtwoord|senha|haslo|parola|motdepasse|losenord|salasana|lozinka|changeme|redacted|undefined|xxxxxxxx))[A-Za-z0-9!@#$%^&*()_+\\-=;':\".<>?\\\\|`~]{10,}[\"']",
+          "keyword": "password"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Generic Password 2",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)<password>[A-Za-z0-9!@#$%^&*()_+\\-=\\[\\]{};':\".,<>?\\\\|`~]+</password>"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Generic Secret 1",
+      "patterns": [
+        {
+          "regex": "(?i)secret['\\\"\\s:]+[\"'][A-Za-z0-9_-]{20,}[\"']",
+          "keyword": "secret"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Generic Secret 2",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)<secret>[A-Za-z0-9_-]+</secret>"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Generic API Key 1",
+      "patterns": [
+        {
+          "regex": "(?i)apikey['\\\"\\s:=]+[\"'][A-Za-z0-9_-]{20,}[\"']",
+          "keyword": "apikey"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Generic API Key 2",
+      "patterns": [
+        {
+          "regex": "(?i)api_key['\\\"\\s:]+[\"'][A-Za-z0-9_-]{20,}[\"']",
+          "keyword": "api_key"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Generic API Key 3",
+      "patterns": [
+        {
+          "regex": "(?i)api-key['\\\"\\s:=]+[\"'][A-Za-z0-9_-]{20,}[\"']",
+          "keyword": "api-key"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Generic Private Key 1",
+      "patterns": [
+        {
+          "regex": "(?i)privatekey['\\\"\\s:=]+[\"'][A-Za-z0-9_-]{20,}[\"']",
+          "keyword": "privatekey"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Generic Private Key 2",
+      "patterns": [
+        {
+          "regex": "(?i)private_key['\\\"\\s:]+[\"'][A-Za-z0-9_-]{20,}[\"']",
+          "keyword": "private_key"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Generic Private Key 3",
+      "patterns": [
+        {
+          "regex": "(?i)private-key['\\\"\\s:=]+[\"'][A-Za-z0-9_-]{20,}[\"']",
+          "keyword": "private-key"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Facebook Access Token 1",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)EAACEdEose0cBA[a-zA-Z0-9]+",
+          "keyword": "eaacedeose"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Instagram Access Token",
+      "patterns": [
+        {
+          "regex": "(?i)instagram['\\\"\\s:]+\\d+\\.[a-fA-F0-9]{7}\\.[a-fA-F0-9]{30}",
+          "keyword": "instagram"
+        },
+        {
+          "regex": "\\d{10}\\.[a-fA-F0-9]{7}\\.[a-fA-F0-9]{30}"
+        },
+        {
+          "regex": "\\d{10}\\.[a-fA-F0-9]{7}\\.[a-fA-F0-9]{30}"
+        }
+      ],
+      "requires_context": true
+    },
+    {
+      "name": "Facebook Token EAAAE (Duplicate)",
+      "patterns": [
+        {
+          "regex": "(?i)(?:facebook|fb)[-_.\\s]{0,3}(?:access[-_.\\s]{0,3})?token['\\\"\\s:=]+EAAAE[a-zA-Z0-9_\\-]{58}",
+          "keyword": "facebook"
+        }
+      ],
+      "requires_context": true,
+      "note": "Facebook token format - duplicate entry"
+    },
+    {
+      "name": "Twilio Auth Token",
+      "patterns": [
+        {
+          "regex": "(?i)twilio['\\\"\\s:]+[a-fA-F0-9]{30}",
+          "keyword": "twilio"
+        },
+        {
+          "regex": "(?i)TWILIO_AUTH_TOKEN['\\\"\\s:=]+[a-fA-F0-9]{30}",
+          "keyword": "twilio_auth_token"
+        }
+      ],
+      "requires_context": true,
+      "note": "Removed standalone [a-fA-F0-9]{30} pattern due to false positives"
+    },
+    {
+      "name": "Firebase Project ID firestore",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)firestore\\.googleapis\\.com/v1/projects/[a-z0-9\\-]{6,}",
+          "keyword": "firestore"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Firebase Project ID firebaseio",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)[a-z0-9\\-]{6,}\\.firebaseapp\\.com",
+          "keyword": "firebase"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Firebase Project ID appspot",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)[a-z0-9\\-]{6,}\\.appspot\\.com"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Firebase Project ID cloudfunctions",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)[a-z0-9\\-]{6,}\\.cloudfunctions\\.net"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Firebase Project ID firebaseapp",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)[a-z0-9\\-]{6,}\\.(?:firebaseapp|web)\\.app",
+          "keyword": "firebase"
+        }
+      ],
+      "requires_context": false
+    },
+    {
+      "name": "Firebase Project ID firebasestorage",
+      "patterns": [
+        {
+          "regex": "(?<!\\w)[a-z0-9\\-]{6,}\\.firebasestorage\\.app",
+          "keyword": "firebase"
+        }
+      ],
+      "requires_context": false
+    }
+  ]
+}

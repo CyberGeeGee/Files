@@ -230,3 +230,4 @@ data/authorization.xml
 discoverer/app/directPartialConnect
 admin/usersManage.php
 subscription/create-by-card
+v2/checkForIssueUpdate

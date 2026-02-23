@@ -229,3 +229,4 @@ api/v1/user/collaborator
 data/authorization.xml
 discoverer/app/directPartialConnect
 admin/usersManage.php
+subscription/create-by-card

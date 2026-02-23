@@ -228,3 +228,4 @@ references/waf-bypass.md
 api/v1/user/collaborator
 data/authorization.xml
 discoverer/app/directPartialConnect
+admin/usersManage.php

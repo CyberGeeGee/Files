@@ -242,3 +242,4 @@ Lenovo/Vantage/Addins/Lenovo.Vantage.SmartPerformanceAddin
 openapi/openapi.json
 openapi/swagger
 export_panelists_to_xlsx
+sitecore_xaml.ashx

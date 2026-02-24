@@ -241,3 +241,4 @@ connector_platform_oauth_redirect
 Lenovo/Vantage/Addins/Lenovo.Vantage.SmartPerformanceAddin
 openapi/openapi.json
 openapi/swagger
+export_panelists_to_xlsx

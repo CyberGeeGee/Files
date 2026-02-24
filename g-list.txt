@@ -239,3 +239,5 @@ ccc/o365connector-business-dac4c231-bc0f-4d07-8b4c-3e1f3ee122ae/oauth/callback
 ccc/o365connector-personal-b9ce8873-ed1f-405d-97b4-51ca6b2a4f3f/oauth/callback
 connector_platform_oauth_redirect
 Lenovo/Vantage/Addins/Lenovo.Vantage.SmartPerformanceAddin
+openapi/openapi.json
+openapi/swagger

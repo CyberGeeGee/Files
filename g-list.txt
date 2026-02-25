@@ -251,3 +251,4 @@ api/workflows/{WORKFLOW_ID}/draft
 assets/js/main.js.map
 api/modular-connector/login
 doc/index.php
+api/turn-credentials

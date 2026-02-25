@@ -246,3 +246,6 @@ sitecore_xaml.ashx
 enm/vantage30/service/ConfigService/stable/x86.xml
 api/v1/incidents/{incident_id}
 api/workflows/{WORKFLOW_ID}/draft
+.map
+.js.map
+assets/js/main.js.map

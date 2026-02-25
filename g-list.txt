@@ -249,3 +249,4 @@ api/workflows/{WORKFLOW_ID}/draft
 .map
 .js.map
 assets/js/main.js.map
+api/modular-connector/login

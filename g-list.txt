@@ -252,3 +252,6 @@ assets/js/main.js.map
 api/modular-connector/login
 doc/index.php
 api/turn-credentials
+api/generate
+api/pull
+api/push

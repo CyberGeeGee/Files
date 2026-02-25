@@ -250,3 +250,4 @@ api/workflows/{WORKFLOW_ID}/draft
 .js.map
 assets/js/main.js.map
 api/modular-connector/login
+doc/index.php

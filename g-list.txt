@@ -258,3 +258,4 @@ api/push
 helpdesk/WebObjects/Helpdesk.woa
 aio/api/v2/change_password
 cookie_refresh
+.mcp.json

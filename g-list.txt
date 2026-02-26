@@ -256,3 +256,4 @@ api/generate
 api/pull
 api/push
 helpdesk/WebObjects/Helpdesk.woa
+aio/api/v2/change_password

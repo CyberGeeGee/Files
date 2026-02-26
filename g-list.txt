@@ -294,3 +294,4 @@ rt/api/videohub/response
 rt/api/vui/request
 rt/api/vui/response
 rt/wirelesscontroller
+api/v1/collect

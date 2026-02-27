@@ -295,3 +295,9 @@ rt/api/vui/request
 rt/api/vui/response
 rt/wirelesscontroller
 api/v1/collect
+zcfg
+zcfg_bin_file
+Discovery
+Adv_LAN_WAN.asp
+Server_Activation.asp
+Device_activation.asp

@@ -301,3 +301,4 @@ Discovery
 Adv_LAN_WAN.asp
 Server_Activation.asp
 Device_activation.asp
+onboarding/account_details/

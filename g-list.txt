@@ -304,3 +304,5 @@ Device_activation.asp
 onboarding/account_details/
 eppo/api/flag-config/v1/config
 oauth/client_code
+api/v1/user/whoami
+api/v1/users/register

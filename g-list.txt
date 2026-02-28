@@ -303,3 +303,4 @@ Server_Activation.asp
 Device_activation.asp
 onboarding/account_details/
 eppo/api/flag-config/v1/config
+oauth/client_code

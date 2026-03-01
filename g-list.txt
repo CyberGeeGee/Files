@@ -309,3 +309,4 @@ api/v1/users/register
 api/admin/change-role
 api/admin/update-settings
 api/subscription/confirm
+api/users/:id

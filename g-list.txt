@@ -318,3 +318,4 @@ uploads/gate.php
 api/v1/fetch-url
 admin/update-user
 oauth/idp/.well-known/openid-configuration
+visulox/api/v1/portal/session/authenticate

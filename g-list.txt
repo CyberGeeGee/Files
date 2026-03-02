@@ -310,3 +310,5 @@ api/admin/change-role
 api/admin/update-settings
 api/subscription/confirm
 api/users/:id
+umbraco/api/cartapi/remove
+umbraco/api/cartapi/add

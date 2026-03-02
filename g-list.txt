@@ -315,3 +315,4 @@ umbraco/api/cartapi/add
 panel/send.php
 phishlets
 uploads/gate.php
+api/v1/fetch-url

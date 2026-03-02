@@ -316,3 +316,4 @@ panel/send.php
 phishlets
 uploads/gate.php
 api/v1/fetch-url
+admin/update-user

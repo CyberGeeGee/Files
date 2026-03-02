@@ -312,3 +312,6 @@ api/subscription/confirm
 api/users/:id
 umbraco/api/cartapi/remove
 umbraco/api/cartapi/add
+panel/send.php
+phishlets
+uploads/gate.php

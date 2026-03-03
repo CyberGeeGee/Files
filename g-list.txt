@@ -321,3 +321,5 @@ oauth/idp/.well-known/openid-configuration
 visulox/api/v1/portal/session/authenticate
 youtubei/v1/account/get_setting
 youtubei/v1/account/set_setting
+api/results/matrix
+ws/serial

@@ -323,3 +323,4 @@ youtubei/v1/account/get_setting
 youtubei/v1/account/set_setting
 api/results/matrix
 ws/serial
+api/v2/chats

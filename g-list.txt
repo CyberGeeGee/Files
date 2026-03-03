@@ -324,3 +324,8 @@ youtubei/v1/account/set_setting
 api/results/matrix
 ws/serial
 api/v2/chats
+config/schedule
+config/command
+config/handler
+output/dag-instance
+alarm/dag-instance

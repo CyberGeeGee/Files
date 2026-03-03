@@ -329,3 +329,4 @@ config/command
 config/handler
 output/dag-instance
 alarm/dag-instance
+details/show.html

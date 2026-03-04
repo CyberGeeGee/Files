@@ -330,3 +330,4 @@ config/handler
 output/dag-instance
 alarm/dag-instance
 details/show.html
+sys/kernel/debug/kprobes/list

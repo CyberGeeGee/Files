@@ -331,3 +331,5 @@ output/dag-instance
 alarm/dag-instance
 details/show.html
 sys/kernel/debug/kprobes/list
+api/teams/{team_id}/invite
+api/teams/{team_id}/users/{user_id}/roles/default

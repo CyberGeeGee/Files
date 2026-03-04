@@ -338,3 +338,4 @@ user/v2/users
 user/v2/acl
 user/v2/acl/internal
 bof.aspx
+v1.0/search/query

@@ -347,3 +347,4 @@ wp-includes/class-wp-cache-validator.php
 AGENTS.md
 repository/pangle/
 v1/chat/completions
+.env.1password

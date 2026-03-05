@@ -348,3 +348,4 @@ AGENTS.md
 repository/pangle/
 v1/chat/completions
 .env.1password
+user/update_password/2

@@ -353,3 +353,4 @@ consumer-backend/cart/v3/cart
 api/event/p/sar/click
 get-artifact
 ajax-api/2.0/mlflow/upload-artifact
+api/v2/tickets/{ticket_id}.json

@@ -351,3 +351,5 @@ v1/chat/completions
 user/update_password/2
 consumer-backend/cart/v3/cart
 api/event/p/sar/click
+get-artifact
+ajax-api/2.0/mlflow/upload-artifact

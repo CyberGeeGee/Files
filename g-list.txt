@@ -354,3 +354,6 @@ api/event/p/sar/click
 get-artifact
 ajax-api/2.0/mlflow/upload-artifact
 api/v2/tickets/{ticket_id}.json
+main-OMYF25AZ.js
+v2/projects
+v2/projects/projectid/members

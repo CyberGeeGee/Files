@@ -359,3 +359,4 @@ v2/projects
 v2/projects/projectid/members
 api/v2/payment_intents
 api/v6/refresh/data
+cgi-bin/user-profile.pl

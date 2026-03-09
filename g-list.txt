@@ -369,3 +369,4 @@ api/interrogate
 api/tts
 api/transcribe
 workspaces/{YOUR-WORKSPACE-ID}/projects
+analytics/submit.php

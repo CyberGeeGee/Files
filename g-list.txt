@@ -364,3 +364,7 @@ extensions/setup
 extensions/callback
 extensions/finish
 api/dashboard
+api/export
+api/interrogate
+api/tts
+api/transcribe

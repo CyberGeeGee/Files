@@ -363,3 +363,4 @@ cgi-bin/user-profile.pl
 extensions/setup
 extensions/callback
 extensions/finish
+api/dashboard

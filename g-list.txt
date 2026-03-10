@@ -376,3 +376,4 @@ api/workflows
 brakeman_report.html
 api/device/start
 api/device/status
+dev-login

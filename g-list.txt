@@ -371,3 +371,4 @@ api/transcribe
 workspaces/{YOUR-WORKSPACE-ID}/projects
 analytics/submit.php
 retrieve_code
+api/users/create

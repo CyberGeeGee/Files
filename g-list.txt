@@ -373,3 +373,4 @@ analytics/submit.php
 retrieve_code
 api/users/create
 api/workflows
+brakeman_report.html

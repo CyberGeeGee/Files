@@ -374,3 +374,5 @@ retrieve_code
 api/users/create
 api/workflows
 brakeman_report.html
+api/device/start
+api/device/status

@@ -403,3 +403,4 @@ web/aihub/train/get_task_status
 web/aihub/common/get_history_list
 web/aihub/common/get_task_status
 web/aihub/common/repeat_task
+glic

@@ -406,3 +406,5 @@ web/aihub/common/repeat_task
 glic
 api/v2/bookings/report
 o/graphql/v1
+modules/pricebook/users/users
+modules/reporting-rollups/api/users/GetHubUsers

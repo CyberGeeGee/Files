@@ -405,3 +405,4 @@ web/aihub/common/get_task_status
 web/aihub/common/repeat_task
 glic
 api/v2/bookings/report
+o/graphql/v1

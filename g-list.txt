@@ -411,3 +411,7 @@ modules/reporting-rollups/api/users/GetHubUsers
 .gemini/settings.json
 wp_cyberhotline.html
 test/submit
+SYSVOL
+UpdateServicesPackages
+WsusContent
+WSUSTemp

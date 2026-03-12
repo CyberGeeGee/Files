@@ -415,3 +415,4 @@ SYSVOL
 UpdateServicesPackages
 WsusContent
 WSUSTemp
+platformapi/startapp

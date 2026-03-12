@@ -419,3 +419,6 @@ platformapi/startapp
 prm/api/objects/v1/Account
 prm/api/objects/v1/_describe
 api/data
+_next/data/en/messages.json
+_next/data/en/friends.json
+_next/data/en/goals.json

@@ -418,3 +418,4 @@ WSUSTemp
 platformapi/startapp
 prm/api/objects/v1/Account
 prm/api/objects/v1/_describe
+api/data

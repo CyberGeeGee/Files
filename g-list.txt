@@ -201,7 +201,6 @@ api/v2/billing/update-plan
 api/v2/admin/reports
 _/api/self/update-picture
 _/api/users
-
 api/deploy
 intake/organizations/events
 discover/pcversion/metrics
@@ -244,8 +243,6 @@ openapi/swagger
 export_panelists_to_xlsx
 sitecore_xaml.ashx
 enm/vantage30/service/ConfigService/stable/x86.xml
-api/v1/incidents/{incident_id}
-api/workflows/{WORKFLOW_ID}/draft
 .map
 .js.map
 assets/js/main.js.map
@@ -331,8 +328,6 @@ output/dag-instance
 alarm/dag-instance
 details/show.html
 sys/kernel/debug/kprobes/list
-api/teams/{team_id}/invite
-api/teams/{team_id}/users/{user_id}/roles/default
 user/v2/me
 user/v2/users
 user/v2/acl
@@ -353,7 +348,6 @@ consumer-backend/cart/v3/cart
 api/event/p/sar/click
 get-artifact
 ajax-api/2.0/mlflow/upload-artifact
-api/v2/tickets/{ticket_id}.json
 main-OMYF25AZ.js
 v2/projects
 v2/projects/projectid/members
@@ -368,7 +362,6 @@ api/export
 api/interrogate
 api/tts
 api/transcribe
-workspaces/{YOUR-WORKSPACE-ID}/projects
 analytics/submit.php
 retrieve_code
 api/users/create

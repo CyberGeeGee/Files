@@ -421,3 +421,5 @@ assets/GoffleStrong.json
 assets/FtnerrTurkize.json
 assets/NascentAirers.json
 api/webhooks/
+get_arhive_npm
+get_encrypt_file_exe

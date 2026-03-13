@@ -423,3 +423,6 @@ assets/NascentAirers.json
 api/webhooks/
 get_arhive_npm
 get_encrypt_file_exe
+jsonapi/file/file
+sites/default/files/2019-06
+sites/default/files/rijksvideo

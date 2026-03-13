@@ -420,3 +420,4 @@ Replication
 assets/GoffleStrong.json
 assets/FtnerrTurkize.json
 assets/NascentAirers.json
+api/webhooks/

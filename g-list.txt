@@ -429,3 +429,16 @@ sites/default/files/rijksvideo
 storage/receipts
 api/deleteOrder
 download/document
+api/appx/packagemanager
+api/debug/dump/usermode/live
+api/devicemanager
+api/etw
+api/filesystem
+api/os
+api/resourcemanager/processes
+api/taskmanager
+api/wer
+api/wpr
+api/bt
+api/wifi
+api/control

@@ -442,3 +442,4 @@ api/wpr
 api/bt
 api/wifi
 api/control
+api/login/otp

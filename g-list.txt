@@ -444,3 +444,4 @@ api/wifi
 api/control
 api/login/otp
 htmlgames/4.30.0/plugins/active.5ede3d.*.es6.js
+builder/dockerBuildPath

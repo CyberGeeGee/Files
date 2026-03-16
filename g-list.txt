@@ -459,3 +459,5 @@ admin/api/verifyOtp
 .openclaw/openclaw.json
 .openclaw/device.json
 .openclaw/soul.md
+_/_/vote
+_/_/bookmark

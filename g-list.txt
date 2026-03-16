@@ -449,3 +449,5 @@ api/debug/config
 api/internal/export
 identity/api/v2/user/videos/convert_video
 workshop/api/merchant/contact_mechanic
+.ship-safe/context.json
+.ship-safe/llm-cache.json

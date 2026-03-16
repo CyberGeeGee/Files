@@ -456,3 +456,6 @@ api/scans
 api/report
 admin/api/update-user
 admin/api/verifyOtp
+.openclaw/openclaw.json
+.openclaw/device.json
+.openclaw/soul.md

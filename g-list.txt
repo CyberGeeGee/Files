@@ -454,3 +454,5 @@ workshop/api/merchant/contact_mechanic
 api/scan
 api/scans
 api/report
+admin/api/update-user
+admin/api/verifyOtp

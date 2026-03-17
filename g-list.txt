@@ -465,3 +465,7 @@ uni/v2/au.pj
 ad-host-config/nonvpn.pj
 vmdk
 ntds.dit
+api/v5/users/10,9
+api/v5/users/10.9
+api/v5/users/10/details
+api/v5/users?id=10

@@ -463,3 +463,5 @@ _/_/vote
 _/_/bookmark
 uni/v2/au.pj
 ad-host-config/nonvpn.pj
+vmdk
+ntds.dit

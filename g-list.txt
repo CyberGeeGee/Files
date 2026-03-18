@@ -475,3 +475,4 @@ admin/login/
 admin/users/
 password-reset/
 generate-preimage
+api/v2/clogin

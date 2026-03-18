@@ -470,3 +470,4 @@ api/v5/users/10.9
 api/v5/users/10/details
 api/v5/users?id=10
 api/detection_engine/signals/search
+trust/verification

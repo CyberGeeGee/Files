@@ -476,3 +476,7 @@ admin/users/
 password-reset/
 generate-preimage
 api/v2/clogin
+footprints/servicedesk/aspnetconfig
+footprints/servicedesk/passwordreset/request
+footprints/servicedesk/import/searchWeb
+footprints/servicedesk/externalfeed/RSS

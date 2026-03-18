@@ -474,3 +474,4 @@ trust/verification
 admin/login/
 admin/users/
 password-reset/
+generate-preimage

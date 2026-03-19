@@ -505,3 +505,15 @@ sbox0_main_18.4.js
 sbx0_main.js
 sbx1_main.js
 pe_main.js
+rest/v1/agents
+rest/v1/users
+rest/v1/owners
+rest/v1/agent_messages
+rest/v1/posts
+rest/v1/observers
+rest/v1/identity_verifications
+rest/v1/developer_apps
+rest/v1/notifications
+rest/v1/votes
+rest/v1/follows
+rest/v1/site_admins

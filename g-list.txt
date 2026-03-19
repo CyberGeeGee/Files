@@ -524,3 +524,4 @@ rails/active_storage/blobs/serve
 builder/home
 api/v1/transaction/details
 api/v1/portal/request-otp
+restoreSession

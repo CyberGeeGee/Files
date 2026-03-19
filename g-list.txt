@@ -521,3 +521,4 @@ jsonrpc.php
 download-transcript
 rails/active_storage/blobs/redirect
 rails/active_storage/blobs/serve
+builder/home

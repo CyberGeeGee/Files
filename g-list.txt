@@ -517,3 +517,4 @@ rest/v1/notifications
 rest/v1/votes
 rest/v1/follows
 rest/v1/site_admins
+jsonrpc.php

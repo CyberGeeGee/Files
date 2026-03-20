@@ -532,3 +532,6 @@ moveittransfer/api/v1/token
 v1/setexpresscheckout
 pin-comment/
 unpin-comment/
+download/.config.py.swp
+download/.config.py.swo
+download/config.py~

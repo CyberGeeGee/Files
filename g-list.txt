@@ -535,3 +535,4 @@ unpin-comment/
 download/.config.py.swp
 download/.config.py.swo
 download/config.py~
+api/v1/vendor/onboarding

@@ -529,3 +529,4 @@ bin/querybuilder.json;x='x/graphql/execute/json/y'?path=/conf
 bin/querybuilder.json;x='x/graphql/execute/json/y'?path=/conf&type=nt:unstructured&property=gql&p.hits=full&p.limit=-1
 administrator/dashboard
 moveittransfer/api/v1/token
+v1/setexpresscheckout

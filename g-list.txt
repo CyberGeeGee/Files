@@ -530,3 +530,5 @@ bin/querybuilder.json;x='x/graphql/execute/json/y'?path=/conf&type=nt:unstructur
 administrator/dashboard
 moveittransfer/api/v1/token
 v1/setexpresscheckout
+pin-comment/
+unpin-comment/

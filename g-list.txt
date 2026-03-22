@@ -542,3 +542,4 @@ api/v1/build_public_tmp/[flow_id]/flow
 api/v1/validate/code
 PacsAPI/api/Config/GetPreLoginConfig
 source_code.tar.gz
+frontend/src/components/WorkspaceChat/ChatContainer/ChatHistory/PromptReply/index.jsx

@@ -543,3 +543,4 @@ api/v1/validate/code
 PacsAPI/api/Config/GetPreLoginConfig
 source_code.tar.gz
 frontend/src/components/WorkspaceChat/ChatContainer/ChatHistory/PromptReply/index.jsx
+api/v2/managers

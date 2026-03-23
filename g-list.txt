@@ -545,3 +545,11 @@ source_code.tar.gz
 frontend/src/components/WorkspaceChat/ChatContainer/ChatHistory/PromptReply/index.jsx
 api/v2/managers
 api/v1/auto_login
+dashboard/leaderboard
+programs/bug-bounty
+directory/programs
+member/leaderboard
+audits/leaderboard
+audits/contests
+community/member-statistics
+advisories/published

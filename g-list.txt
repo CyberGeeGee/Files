@@ -558,3 +558,6 @@ flow/target/create26/register-interest/createaccount
 flow/target/create25/register-interest/createaccount
 api/v1/version
 diag_tables.php
+importADUsers
+importADUserGroups
+addRoleToADGroup

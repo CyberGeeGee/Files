@@ -561,3 +561,4 @@ diag_tables.php
 importADUsers
 importADUserGroups
 addRoleToADGroup
+api/users/1042

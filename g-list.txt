@@ -564,3 +564,4 @@ addRoleToADGroup
 api/users/1042
 upload_large.php
 upload_status.php
+api/v1/home/GetSwaggerEndpoints

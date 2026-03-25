@@ -571,3 +571,4 @@ api/v1/Attachment
 api/v1/Attachment/file
 api/v1/Attachment/chunk
 api/leaderboard
+-/v1/search

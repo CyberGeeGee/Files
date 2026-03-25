@@ -566,3 +566,7 @@ upload_large.php
 upload_status.php
 api/v1/home/GetSwaggerEndpoints
 Windchill/servlet
+api/v1/Formula/action/run
+api/v1/Attachment
+api/v1/Attachment/file
+api/v1/Attachment/chunk

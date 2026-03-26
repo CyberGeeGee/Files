@@ -590,3 +590,8 @@ _api/user
 _api/version
 _frontend
 _open/aqlfunctions
+sslvpn/portal.html
+sslvpn/login
+api/v2/cmdb/firewall/policy
+api/v2/monitor/firewall/policy
+api/v2/monitor/system/status

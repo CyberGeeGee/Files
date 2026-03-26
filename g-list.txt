@@ -577,3 +577,4 @@ storybook-server-channel
 static/*.js
 api/oauth/state
 api/oauth/exchange
+_vinext/image

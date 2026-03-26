@@ -574,3 +574,4 @@ api/leaderboard
 -/v1/search
 api/soap/mantisconnect.php
 storybook-server-channel
+static/*.js

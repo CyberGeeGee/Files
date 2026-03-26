@@ -578,3 +578,15 @@ static/*.js
 api/oauth/state
 api/oauth/exchange
 _vinext/image
+_admin/aardvark/index.html
+_admin/aardvark
+_api/collection
+_api/cursor
+_api/database
+_api/document
+_api/job
+_api/query
+_api/user
+_api/version
+_frontend
+_open/aqlfunctions

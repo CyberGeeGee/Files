@@ -595,3 +595,4 @@ sslvpn/login
 api/v2/cmdb/firewall/policy
 api/v2/monitor/firewall/policy
 api/v2/monitor/system/status
+blocks/generate/

@@ -596,3 +596,4 @@ api/v2/cmdb/firewall/policy
 api/v2/monitor/firewall/policy
 api/v2/monitor/system/status
 blocks/generate/
+api/content/v2/staged-files

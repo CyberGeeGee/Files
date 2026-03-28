@@ -601,3 +601,4 @@ api/report/print/
 api/report/template/
 api/manage-user.php
 metadata/samlidp
+api/v1/oidc/api_key_roles

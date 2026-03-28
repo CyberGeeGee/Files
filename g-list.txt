@@ -600,3 +600,4 @@ api/content/v2/staged-files
 api/report/print/
 api/report/template/
 api/manage-user.php
+metadata/samlidp

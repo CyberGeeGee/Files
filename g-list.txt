@@ -602,3 +602,14 @@ api/report/template/
 api/manage-user.php
 metadata/samlidp
 api/v1/oidc/api_key_roles
+wp-json/whitehouse/v1/home
+wp-json/whitehouse/v1/news/articles
+wp-json/whitehouse/v1/wire
+wp-json/whitehouse/v1/live
+wp-json/whitehouse/v1/galleries
+wp-json/whitehouse/v1/issues
+wp-json/whitehouse/v1/priorities
+wp-json/whitehouse/v1/achievements
+wp-json/whitehouse/v1/affordability
+wp-json/whitehouse/v1/media-bias
+wp-json/whitehouse/v1/social/x

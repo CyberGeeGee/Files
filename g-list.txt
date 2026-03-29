@@ -616,3 +616,5 @@ wp-json/whitehouse/v1/social/x
 btc-light-client-contract/pull/116
 users/view/data
 users/project-owner-details
+wsfed/passive
+saml/login

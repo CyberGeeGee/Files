@@ -618,3 +618,4 @@ users/view/data
 users/project-owner-details
 wsfed/passive
 saml/login
+cgi/GetAuthMethods

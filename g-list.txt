@@ -619,3 +619,5 @@ users/project-owner-details
 wsfed/passive
 saml/login
 cgi/GetAuthMethods
+api/credentials/status-check
+internal/credentials/agents

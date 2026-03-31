@@ -622,3 +622,5 @@ cgi/GetAuthMethods
 api/credentials/status-check
 internal/credentials/agents
 includes/api/
+api/user/profilengroup
+api/manage/dataset

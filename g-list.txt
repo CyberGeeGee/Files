@@ -621,3 +621,4 @@ saml/login
 cgi/GetAuthMethods
 api/credentials/status-check
 internal/credentials/agents
+includes/api/

@@ -626,3 +626,4 @@ api/user/profilengroup
 api/manage/dataset
 web/dataset/call_kw
 api/web-components/1/register
+api/ve1/customer-service/wishlist

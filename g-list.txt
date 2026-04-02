@@ -631,3 +631,5 @@ gap-service/api/gaps/upload
 user-service/api/users/login
 user-service/api/users/reset-password
 user-service/api/users/forgot-password
+ConfigService/Admin.aspx
+ConfigService/api/StroageZoneConfig

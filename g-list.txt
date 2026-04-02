@@ -633,3 +633,6 @@ user-service/api/users/reset-password
 user-service/api/users/forgot-password
 ConfigService/Admin.aspx
 ConfigService/api/StroageZoneConfig
+li/track
+platform-telemetry/li/apfcDf
+apfc/collect

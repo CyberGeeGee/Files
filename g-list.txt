@@ -639,3 +639,5 @@ apfc/collect
 manager/text/deploy
 rest/com/vmware/cis/session
 web/saml2/sso
+api/rsc
+__NEXT_DATA__

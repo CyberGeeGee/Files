@@ -641,3 +641,6 @@ rest/com/vmware/cis/session
 web/saml2/sso
 api/rsc
 __NEXT_DATA__
+backend/inc/cronajax.php
+backend/admin_load_ajax.php
+backend/domain_import_ajax.php

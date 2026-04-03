@@ -636,3 +636,6 @@ ConfigService/api/StroageZoneConfig
 li/track
 platform-telemetry/li/apfcDf
 apfc/collect
+manager/text/deploy
+rest/com/vmware/cis/session
+web/saml2/sso

@@ -645,3 +645,5 @@ backend/inc/cronajax.php
 backend/admin_load_ajax.php
 backend/domain_import_ajax.php
 pair/approve
+git-http
+codebuild/readonly/agent

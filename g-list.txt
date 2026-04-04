@@ -647,3 +647,5 @@ backend/domain_import_ajax.php
 pair/approve
 git-http
 codebuild/readonly/agent
+config/functions/bootstrap.js
+config/environments/production/database.json

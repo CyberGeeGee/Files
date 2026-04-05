@@ -649,3 +649,4 @@ git-http
 codebuild/readonly/agent
 config/functions/bootstrap.js
 config/environments/production/database.json
+DESIGN.md

@@ -672,3 +672,4 @@ admin/content/
 api/flow/config/
 admin/flow/settings/
 _flowstream/
+static/js/dist/jobSearch.bundle.js

@@ -677,3 +677,6 @@ json_rpc
 mgmt/tm/util/bash
 v1/check/manifest
 v1/findings/active
+api/ext/link/create
+api/ext/device/start
+api/ext/device/status

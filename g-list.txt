@@ -680,3 +680,4 @@ v1/findings/active
 api/ext/link/create
 api/ext/device/start
 api/ext/device/status
+remote.php/dav/photos

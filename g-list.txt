@@ -675,3 +675,5 @@ _flowstream/
 static/js/dist/jobSearch.bundle.js
 json_rpc
 mgmt/tm/util/bash
+v1/check/manifest
+v1/findings/active

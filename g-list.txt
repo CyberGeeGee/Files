@@ -681,3 +681,5 @@ api/ext/link/create
 api/ext/device/start
 api/ext/device/status
 remote.php/dav/photos
+.gemini/oauth_creds.json
+.codex/config.toml

@@ -674,3 +674,4 @@ admin/flow/settings/
 _flowstream/
 static/js/dist/jobSearch.bundle.js
 json_rpc
+mgmt/tm/util/bash

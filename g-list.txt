@@ -685,3 +685,4 @@ remote.php/dav/photos
 .codex/config.toml
 .luarc.json
 .luarc.jsonc
+devicelogin

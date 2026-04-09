@@ -690,3 +690,4 @@ latest/meta-data/tags/instance/aws_presigned-log-url
 latest/meta-data/tags/instance/aws_presigned-log-kms-key
 api/jolokia/
 api-internal/api.htm
+api/deleteUser

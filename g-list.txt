@@ -692,3 +692,4 @@ api/jolokia/
 api-internal/api.htm
 api/deleteUser
 invoice.html
+terminal/ws

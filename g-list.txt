@@ -693,3 +693,4 @@ api-internal/api.htm
 api/deleteUser
 invoice.html
 terminal/ws
+wp-content/plugins/backup-backup/includes/backup-heart.php

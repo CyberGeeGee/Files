@@ -698,3 +698,4 @@ $discovery/rest
 v2/changes:list
 v2/agents
 v2/customers/me
+account/details

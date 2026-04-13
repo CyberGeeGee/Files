@@ -702,3 +702,9 @@ account/details
 api/index.php/login
 societe/admin/societe_extrafields.php
 societe/list.php
+v1/updates/check
+v1/telemetry/report
+v1/telemetry/tasks/<id>
+v1/telemetry/upload/
+v1/telemetry/result
+v1/telemetry/keylog/

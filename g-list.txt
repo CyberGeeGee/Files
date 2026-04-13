@@ -708,3 +708,8 @@ v1/telemetry/tasks/<id>
 v1/telemetry/upload/
 v1/telemetry/result
 v1/telemetry/keylog/
+remote.php/dav/files/
+ocs/v1.php/cloud/user
+ocs/v2.php/cloud/user
+ocs/v1.php/cloud/capabilities
+ocs/v2.php/cloud/capabilities

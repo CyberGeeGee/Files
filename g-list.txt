@@ -715,3 +715,4 @@ ocs/v1.php/cloud/capabilities
 ocs/v2.php/cloud/capabilities
 wp-content/plugins/backup-backup/includes/bypasser.php
 front/inventory.php
+api/v1/gems

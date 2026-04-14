@@ -719,3 +719,4 @@ api/v1/gems
 generate-token
 delete-token
 translations/unapprove/
+_saml/sloRedirect/

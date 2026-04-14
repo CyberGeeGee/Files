@@ -723,3 +723,4 @@ _saml/sloRedirect/
 cdn-cgi/access/authorized
 cdn-cgi/access/sso/saml
 access-request
+api/v1/alertmanagers

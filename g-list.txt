@@ -718,3 +718,4 @@ front/inventory.php
 api/v1/gems
 generate-token
 delete-token
+translations/unapprove/

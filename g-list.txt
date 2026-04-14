@@ -726,3 +726,6 @@ access-request
 api/v1/alertmanagers
 ftp/secured_fixtures
 ftp/eastere.gg
+account/imports/new
+account/cancellation
+my/access_tokens

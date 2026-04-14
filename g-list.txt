@@ -720,3 +720,6 @@ generate-token
 delete-token
 translations/unapprove/
 _saml/sloRedirect/
+cdn-cgi/access/authorized
+cdn-cgi/access/sso/saml
+access-request

@@ -731,3 +731,4 @@ account/cancellation
 my/access_tokens
 CFIDE/adminapi
 turboquant_kv.json
+system-menu

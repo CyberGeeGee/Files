@@ -732,3 +732,4 @@ my/access_tokens
 CFIDE/adminapi
 turboquant_kv.json
 system-menu
+.well-known/ai.txt

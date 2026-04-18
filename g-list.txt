@@ -733,3 +733,5 @@ CFIDE/adminapi
 turboquant_kv.json
 system-menu
 .well-known/ai.txt
+ghost/api/v3/content
+ghost/api/v4/content

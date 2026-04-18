@@ -735,3 +735,4 @@ system-menu
 .well-known/ai.txt
 ghost/api/v3/content
 ghost/api/v4/content
+api/v2/auth/login

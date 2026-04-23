@@ -742,3 +742,10 @@ api/v2/epconv/
 glasswing
 p/sandbox
 owa/auth.aspx
+xf_admin_log
+xf_conversation_master
+xf_conversation_message
+xf_ip
+xf_post
+xf_thread
+xf_user

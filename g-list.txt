@@ -757,3 +757,12 @@ etc/gai.conf
 etc/services
 etc/host.conf
 jellyfin/plugins
+dra01
+draus01
+dranl01
+dranl02
+vmdra01
+vdrap1
+cst001
+ideabpl1h
+dex01

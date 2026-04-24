@@ -756,3 +756,4 @@ etc/nsswitch.conf
 etc/gai.conf
 etc/services
 etc/host.conf
+jellyfin/plugins

@@ -751,3 +751,8 @@ xf_thread
 xf_user
 coupons/coupon_list
 api/webvpn
+etc/resolv.conf
+etc/nsswitch.conf
+etc/gai.conf
+etc/services
+etc/host.conf

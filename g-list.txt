@@ -749,3 +749,4 @@ xf_ip
 xf_post
 xf_thread
 xf_user
+coupons/coupon_list

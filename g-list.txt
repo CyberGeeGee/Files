@@ -774,3 +774,4 @@ api/memory
 api/experience
 sync/auth
 sessions/create
+api/bookings

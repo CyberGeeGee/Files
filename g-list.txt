@@ -777,3 +777,4 @@ sessions/create
 api/bookings
 .claudekit/config.json
 ai/chatbot-doc
+.github/workflows/format-check.yml

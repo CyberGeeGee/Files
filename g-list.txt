@@ -778,3 +778,8 @@ api/bookings
 .claudekit/config.json
 ai/chatbot-doc
 .github/workflows/format-check.yml
+api/webauthn/passkey/start_registration
+api/webauthn/passkey/finish_registration
+api/webauthn/passkey/start_authentication
+api/webauthn/passkey/finish_authentication
+api/webauthn/passkey/get

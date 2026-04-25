@@ -766,3 +766,11 @@ vdrap1
 cst001
 ideabpl1h
 dex01
+api/projects
+api/mcp
+api/artifacts
+api/styles
+api/memory
+api/experience
+sync/auth
+sessions/create

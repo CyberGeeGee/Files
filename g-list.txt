@@ -775,3 +775,4 @@ api/experience
 sync/auth
 sessions/create
 api/bookings
+.claudekit/config.json

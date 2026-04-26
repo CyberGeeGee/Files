@@ -784,3 +784,4 @@ api/webauthn/passkey/start_authentication
 api/webauthn/passkey/finish_authentication
 api/webauthn/passkey/get
 apiproxy/mtp/liveResponseApi/
+.understand-anything/knowledge-graph.json

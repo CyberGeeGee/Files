@@ -786,3 +786,4 @@ api/webauthn/passkey/get
 apiproxy/mtp/liveResponseApi/
 .understand-anything/knowledge-graph.json
 graphify-out/graph.json
+platformtelemetry/li/apfcDf

@@ -791,3 +791,4 @@ apiscan
 pentest
 api/paas/v4
 api-inference/v1
+docs/usage.md

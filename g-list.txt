@@ -792,3 +792,5 @@ pentest
 api/paas/v4
 api-inference/v1
 docs/usage.md
+v1/logs
+v1/logs/stats

@@ -789,3 +789,5 @@ graphify-out/graph.json
 platformtelemetry/li/apfcDf
 apiscan
 pentest
+api/paas/v4
+api-inference/v1

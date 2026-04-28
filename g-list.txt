@@ -787,3 +787,5 @@ apiproxy/mtp/liveResponseApi/
 .understand-anything/knowledge-graph.json
 graphify-out/graph.json
 platformtelemetry/li/apfcDf
+apiscan
+pentest

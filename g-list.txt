@@ -800,3 +800,5 @@ api/apps/logs
 api/apps/:id/logs
 api/clob
 api/inject
+json-api/version
+scripts2/listaccts

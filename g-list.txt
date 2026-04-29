@@ -798,3 +798,4 @@ manage/ssh/
 _api/update_user_setting
 api/apps/logs
 api/apps/:id/logs
+api/clob

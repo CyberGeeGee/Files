@@ -795,3 +795,4 @@ docs/usage.md
 v1/logs
 v1/logs/stats
 manage/ssh/
+_api/update_user_setting

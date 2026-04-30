@@ -812,3 +812,4 @@ backend/routers/sync.py
 backend/routers/oauth.py
 backend/routers/conversations.py
 backend/utils/byok.py
+static/js/app.js.map

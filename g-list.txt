@@ -802,3 +802,13 @@ api/clob
 api/inject
 json-api/version
 scripts2/listaccts
+backend/.env.template
+web/admin/lib/dev-auth.ts
+web/admin/lib/auth.ts
+backend/database/redis_db.py
+backend/utils/other/endpoints.py
+backend/utils/app_integrations.py
+backend/routers/sync.py
+backend/routers/oauth.py
+backend/routers/conversations.py
+backend/utils/byok.py

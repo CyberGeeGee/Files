@@ -815,3 +815,5 @@ backend/utils/byok.py
 static/js/app.js.map
 ___proxy_subdomain_whm
 ___proxy_subdomain_cpanel
+api/internal/forgejo
+custom/templates

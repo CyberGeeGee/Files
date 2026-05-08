@@ -817,3 +817,6 @@ ___proxy_subdomain_whm
 ___proxy_subdomain_cpanel
 api/internal/forgejo
 custom/templates
+wp-includes/mani.
+wp-content/plugins/all-in-one-wp-security-and-firewall/templates.php
+wp-admin/includes/header.php

@@ -821,3 +821,4 @@ wp-includes/mani.
 wp-content/plugins/all-in-one-wp-security-and-firewall/templates.php
 wp-admin/includes/header.php
 v1/agents
+computeMetadata/v1/instance/service-accounts/default/token

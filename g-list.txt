@@ -175,6 +175,8 @@ api/dev/console
 api/dev/debug
 api/dev/screenshot
 api/tags
+api/ps
+api/chat
 v1/models
 api/v0/models
 v1/health/ready

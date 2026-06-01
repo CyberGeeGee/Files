@@ -829,3 +829,4 @@ ssl-vpn/login.esp
 mailman/admin
 mailman/admindb
 user/push/subscribe
+tikiwiki/

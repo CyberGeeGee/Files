@@ -830,3 +830,4 @@ mailman/admin
 mailman/admindb
 user/push/subscribe
 tikiwiki/
+Videos/

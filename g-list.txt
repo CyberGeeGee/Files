@@ -831,3 +831,4 @@ mailman/admindb
 user/push/subscribe
 tikiwiki/
 Videos/
+v1/sessions/refresh

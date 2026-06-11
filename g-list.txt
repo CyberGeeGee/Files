@@ -832,3 +832,4 @@ user/push/subscribe
 tikiwiki/
 Videos/
 v1/sessions/refresh
+api/embed

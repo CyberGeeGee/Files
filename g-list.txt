@@ -833,3 +833,5 @@ tikiwiki/
 Videos/
 v1/sessions/refresh
 api/embed
+login/oauth/authorize
+login/oauth/token

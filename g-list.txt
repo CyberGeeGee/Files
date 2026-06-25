@@ -836,3 +836,4 @@ api/embed
 login/oauth/authorize
 login/oauth/token
 sap/
+CertSrv

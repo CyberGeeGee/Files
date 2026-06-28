@@ -838,3 +838,4 @@ login/oauth/token
 sap/
 CertSrv
 geoserver
+api/index.php

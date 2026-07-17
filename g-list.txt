@@ -841,3 +841,4 @@ geoserver
 api/index.php
 api/productversion
 api/get_users
+wp-json/wp/v2/batch

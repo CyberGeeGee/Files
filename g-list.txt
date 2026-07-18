@@ -842,3 +842,4 @@ api/index.php
 api/productversion
 api/get_users
 wp-json/wp/v2/batch
+wp-json/batch/v1

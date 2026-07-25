@@ -845,3 +845,4 @@ wp-json/wp/v2/batch
 wp-json/batch/v1
 _trust/default.aspx
 wp-json/wpforms/ppc/webhooks/
+api/security/token

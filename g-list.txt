@@ -848,3 +848,4 @@ wp-json/wpforms/ppc/webhooks/
 api/security/token
 user/users
 user/users/sign-up
+certsrv/certfnsp.aspx

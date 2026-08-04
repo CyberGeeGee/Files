@@ -850,3 +850,4 @@ user/users
 user/users/sign-up
 certsrv/certfnsp.aspx
 api/v1/account/forgot-password
+cgi/login

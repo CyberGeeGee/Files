@@ -854,3 +854,4 @@ cgi/login
 accessv2
 api/waitlist
 api/reservations
+email-search

@@ -860,3 +860,4 @@ gpu/config/gpu_workaround_list.txt
 gpu/command_buffer/service/framebuffer_manager.h
 gpu/command_buffer/service/gles2_cmd_decoder.cc
 src/libANGLE/renderer/gl/renderergl_utils.cpp
+appliance-work-place

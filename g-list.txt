@@ -863,3 +863,6 @@ src/libANGLE/renderer/gl/renderergl_utils.cpp
 appliance-work-place
 llms.txt
 llms-full.txt
+internal/profile
+api/v2/caller-identity
+settings/security

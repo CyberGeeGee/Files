@@ -866,3 +866,4 @@ llms-full.txt
 internal/profile
 api/v2/caller-identity
 settings/security
+api/v2/monitor/web-ui/state

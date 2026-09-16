@@ -867,3 +867,5 @@ internal/profile
 api/v2/caller-identity
 settings/security
 api/v2/monitor/web-ui/state
+oauth2/token
+saml2/logout

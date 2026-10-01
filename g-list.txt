@@ -869,3 +869,4 @@ settings/security
 api/v2/monitor/web-ui/state
 oauth2/token
 saml2/logout
+%6a_security_check

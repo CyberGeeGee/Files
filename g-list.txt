@@ -870,3 +870,7 @@ api/v2/monitor/web-ui/state
 oauth2/token
 saml2/logout
 %6a_security_check
+wp-content/ebwp-backups/
+wp-content/ebwp-backups/.PROCSTAT
+wp-content/uploads/backwpup-restore/extract/
+wp-content/uploads/backwpup-restore/extract/manifest.json

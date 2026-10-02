@@ -874,3 +874,6 @@ wp-content/ebwp-backups/
 wp-content/ebwp-backups/.PROCSTAT
 wp-content/uploads/backwpup-restore/extract/
 wp-content/uploads/backwpup-restore/extract/manifest.json
+DynamicInvoke
+DynamicList
+extensions/proxy

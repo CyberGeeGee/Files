@@ -877,3 +877,6 @@ wp-content/uploads/backwpup-restore/extract/manifest.json
 DynamicInvoke
 DynamicList
 extensions/proxy
+api/v1/perfil
+auth/sessao
+api/v1/pedidos

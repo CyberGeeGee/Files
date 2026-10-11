@@ -880,3 +880,5 @@ extensions/proxy
 api/v1/perfil
 auth/sessao
 api/v1/pedidos
+assets/index.android.bundle
+Payload/<App>.app/main.jsbundle

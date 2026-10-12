@@ -885,3 +885,4 @@ Payload/<App>.app/main.jsbundle
 presets/*.json
 app_volumes.json
 domain.yaml
+oauth2authorize

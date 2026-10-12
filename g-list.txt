@@ -882,3 +882,5 @@ auth/sessao
 api/v1/pedidos
 assets/index.android.bundle
 Payload/<App>.app/main.jsbundle
+presets/*.json
+app_volumes.json

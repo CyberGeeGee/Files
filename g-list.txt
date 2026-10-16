@@ -886,3 +886,4 @@ presets/*.json
 app_volumes.json
 domain.yaml
 oauth2authorize
+api/event

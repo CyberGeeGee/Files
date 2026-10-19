@@ -887,3 +887,5 @@ app_volumes.json
 domain.yaml
 oauth2authorize
 api/event
+site-packages/
+torch/nn/modules/

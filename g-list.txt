@@ -890,3 +890,5 @@ api/event
 site-packages/
 torch/nn/modules/
 front/planning.php
+.github/workflows/security-audit.yml
+.github/workflows/github_actions_security.yml

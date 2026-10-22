@@ -905,3 +905,5 @@ api/bigfile
 api/bigfile/list
 checkpoints
 show_config_errors.php
+e_shell.php
+tmp/sessions/sess_

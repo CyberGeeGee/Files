@@ -924,3 +924,4 @@ uefivarstore
 BENCHMARKS.md
 CASE-STUDY.md
 .config/opencode/AGENTS.md
+cgi-bin/site_active.pl

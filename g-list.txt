@@ -909,3 +909,17 @@ e_shell.php
 tmp/sessions/sess_
 dumps-hashes
 uefivarstore
+.claude/skills/web-pentest/SKILL.md
+.claude/skills/web-pentest/scripts/render-report.sh
+.claude/skills/web-pentest/assets/report-template.md
+.claude/skills/web-pentest/references/methodology.md
+.claude/skills/web-pentest/references/tooling.md
+.claude/skills/web-pentest/evals/evals.json
+.claude/skills/web-pentest/evals/benchmarks/
+.claude/skills/net-pentest/SKILL.md
+.claude/skills/net-pentest/references/active-directory.md
+.claude/skills/net-pentest/references/privesc.md
+.claude/skills/net-pentest/references/pivoting.md
+.claude/skills/net-pentest/references/cloud-identity.md
+BENCHMARKS.md
+CASE-STUDY.md

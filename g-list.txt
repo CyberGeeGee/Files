@@ -923,3 +923,4 @@ uefivarstore
 .claude/skills/net-pentest/references/cloud-identity.md
 BENCHMARKS.md
 CASE-STUDY.md
+.config/opencode/AGENTS.md
